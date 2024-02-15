@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+}
+
+body {
+    background-color: rgb(26, 25, 51);
+}
+
+h1 {
+    text-align: center;
+    color: #fff
+}
+
+h2 {
+    margin: 0;
+}
+
+section {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 2rem;
+    background-color: #fff;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+        & li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .5px solid rgb(201, 201, 201);
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
