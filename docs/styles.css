@@ -3,12 +3,14 @@
     font-family: 'Roboto', monospace;
     scroll-behavior: smooth;
 
-    --header-height: 150px;
+    --header-height: 60px;
     --header-pc-height: 60px;
 }
 
 body {
     background-color: rgb(26, 25, 51);
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -22,7 +24,8 @@ h2 {
     margin: 0 0 .5rem;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #000;
 }
 
@@ -39,35 +42,63 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
-    nav { 
-        padding: 5px 10px;
-        border-radius: 10px;
+    label {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.95);
+        display: none;
+        position: absolute;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
 
         ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: .5rem ;
-            min-width: 500px;
-            
-            a {
-                padding: 3px;
+            padding: 1rem 0;
 
-                &:hover {
-                    background-color: #000;
-                    color: #fff;
+            li {
+                a {
+                    width: 100%;
+                    display: block;
+                    padding: 1rem 10rem;
+
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
                 }
             }
+
+        }
+    }
+
+    #MenuToggle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    >input {
+        display: none;
+
+        &:checked+nav {
+            display: block;
         }
     }
 }
 
 section {
     padding-top: calc(var(--header-height) + 10px);
-    
-    > div {
+
+    >div {
         border-radius: 10px;
         border: 1px solid black;
         background-color: #fff;
@@ -85,10 +116,11 @@ section {
             z-index: 2;
 
             > :not(span) {
-                flex:1;
+                flex: 1;
             }
-            
-            &:not(:first-of-type):hover, &:hover a{
+
+            &:not(:first-of-type):hover,
+            &:hover a {
                 background-color: #000;
                 color: #fff;
                 cursor: pointer;
@@ -97,10 +129,11 @@ section {
         }
     }
 
-    
+
 }
 
-nav ul, section > div > ul{
+nav ul,
+section>div>ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -117,6 +150,32 @@ nav ul, section > div > ul{
     font-family: monospace;
 }
 
+footer {
+    margin-top: var(--header-height);
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+
+    address {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        margin: 0 auto;
+
+        a {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            gap: 10px;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /* PC */
 @media screen and (min-width: 1000px) {
     header {
@@ -124,16 +183,19 @@ nav ul, section > div > ul{
         padding: .5rem;
 
         nav {
-            position: absolute;
-            top: calc(var(--header-pc-height) + 1rem);
-            right: 1rem;
             background-color: #fff;
-            padding: 2rem 1rem;
+            display: block;
+            width: fit-content;
+            padding: 0;
+            padding: 20px 30px;
 
-            ul{
-                flex-direction: column;
-                min-width: fit-content;
+            ul li a {
+                padding: 10px;
             }
+        }
+
+        #MenuToggle {
+            display: none;
         }
     }
 

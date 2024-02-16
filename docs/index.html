@@ -17,26 +17,29 @@
     <main>
         <header>
             <h1>Ayudas Dwarf Fortres</h1>
+
+            <label for="showMenu" id="MenuToggle"><img src="./assets/menu-svgrepo-com.svg" alt="menu"></label>
+            <input type="checkbox" name="showMenu" id="showMenu">
             <nav>
                 <ul>
-                    <li><a href="#Menu">Menu</a></li>
-                    <li><a href="#Comandos">Comandos generales</a></li>
-                    <li><a href="#Construir">Construir</a></li>
-                    <li><a href="#Info">Información del mundo</a></li>
-                    <li><a href="#Designaciones">Designaciones</a></li>
-                    <li><a href="#Zonas">Zonas</a></li>
-                    <li><a href="#Encargos">Encargos</a></li>
-                    <li><a href="#Reservas">Reservas</a></li>
-                    <li><a href="#Talleres">Talleres</a></li>
-                    <li><a href="#ParedSueloEscaleraVia">ParedSueloEscaleraVia</a></li>
-                    <li><a href="#Trafico">Tráfico</a></li>
+                    <li onclick="disableMenu()"><a href="#Menu">Menú</a></li>
+                    <li onclick="disableMenu()"><a href="#Comandos">Comandos generales</a></li>
+                    <li onclick="disableMenu()"><a href="#Construir">Construir</a></li>
+                    <li onclick="disableMenu()"><a href="#Info">Información del mundo</a></li>
+                    <li onclick="disableMenu()"><a href="#Designaciones">Designaciones</a></li>
+                    <li onclick="disableMenu()"><a href="#Zonas">Zonas</a></li>
+                    <li onclick="disableMenu()"><a href="#Encargos">Encargos</a></li>
+                    <li onclick="disableMenu()"><a href="#Reservas">Reservas</a></li>
+                    <li onclick="disableMenu()"><a href="#Talleres">Talleres</a></li>
+                    <li onclick="disableMenu()"><a href="#ParedSueloEscaleraVia">ParedSueloEscaleraVia</a></li>
+                    <li onclick="disableMenu()"><a href="#Trafico">Tráfico</a></li>
                 </ul>
             </nav>
         </header>
 
         <section id="Menu">
             <div>
-                <h2><span class="code">Esc</span> Menu</h2>
+                <h2><span class="code">Esc</span> Menú</h2>
                 <ul>
                     <li><span class="bold">Acción</span><span class="bold">Comando</span></li>
                     <li>Ver anuncios<span class="inputKey bold">a</span></li>
@@ -319,8 +322,22 @@
     </main>
 
     <footer>
-        <p>hola</p>
+        <address>
+            <a href="https://www.linkedin.com/in/elias-bianchi-3a5012183/" target="_blank"><img
+                    src="./assets/linkedin-svgrepo-com.svg" alt="Linkedin Logo"> Linkedin</a>
+            <a href="https://github.com/Elias288" target="_blank"><img src="./assets/github-142-svgrepo-com.svg"
+                    alt="Github Logo"> Github</a>
+        </address>
+
+        <p>No Copyrights</p>
     </footer>
+
+    <script>
+        disableMenu = () => {
+            let checkbox = document.getElementById('showMenu');
+            checkbox.checked = false;
+        };
+    </script>
 </body>
 
 </html>
