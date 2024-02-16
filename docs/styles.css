@@ -3,7 +3,7 @@
     font-family: 'Roboto', monospace;
     scroll-behavior: smooth;
 
-    --header-height: 120px;
+    --header-height: 150px;
     --header-pc-height: 60px;
 }
 
@@ -17,10 +17,12 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    display: inline-flex;
+    gap: 5px;
+    margin: 0 0 .5rem;
 }
 
-a:visited {
+a, a:visited {
     color: #000;
 }
 
@@ -28,7 +30,7 @@ header {
     background-color: #fff;
     position: fixed;
     height: var(--header-height);
-    padding: .5rem;
+    padding: 1rem .5rem .5rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -38,9 +40,7 @@ header {
     justify-content: space-between;
 
     nav { 
-        padding: 5px;
-        max-width: 400px;
-        margin: auto;
+        padding: 5px 10px;
         border-radius: 10px;
 
         ul {
@@ -50,6 +50,7 @@ header {
             flex-direction: row;
             flex-wrap: wrap;
             gap: .5rem ;
+            min-width: 500px;
             
             a {
                 padding: 3px;
@@ -66,10 +67,6 @@ header {
 section {
     padding-top: calc(var(--header-height) + 10px);
     
-    &:not(:last-of-type){
-        margin-bottom: calc(-1 * var(--header-height));
-    }
-    
     > div {
         border-radius: 10px;
         border: 1px solid black;
@@ -78,18 +75,24 @@ section {
         max-width: 500px;
         padding: 15px;
 
-        ul  li {
+        ul li {
             display: flex;
             justify-content: space-between;
+            width: 100%;
             border-bottom: .5px solid rgb(201, 201, 201);
             margin-bottom: 5px;
             padding: 0 5px;
+            z-index: 2;
+
+            > :not(span) {
+                flex:1;
+            }
             
-            &:hover, &:hover a{
+            &:not(:first-of-type):hover, &:hover a{
                 background-color: #000;
                 color: #fff;
                 cursor: pointer;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -107,10 +110,18 @@ nav ul, section > div > ul{
     font-weight: bold;
 }
 
+.code {
+    background-color: #dadada;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
 /* PC */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     header {
         height: var(--header-pc-height);
+        padding: .5rem;
 
         nav {
             position: absolute;
@@ -121,15 +132,12 @@ nav ul, section > div > ul{
 
             ul{
                 flex-direction: column;
+                min-width: fit-content;
             }
         }
     }
 
     section {
         padding-top: calc(var(--header-pc-height) + 10px);
-
-        &:not(:last-of-type){
-            margin-bottom: calc(-1 * var(--header-pc-height));
-        }
     }
 }
