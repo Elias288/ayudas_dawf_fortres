@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', monospace;
+    scroll-behavior: smooth;
+
+    --header-height: 120px;
+    --header-pc-height: 60px;
 }
 
 body {
@@ -9,36 +13,123 @@ body {
 
 h1 {
     text-align: center;
-    color: #fff
+    margin: 0;
 }
 
 h2 {
     margin: 0;
 }
 
-section {
-    width: 500px;
-    margin: 0 auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 2rem;
-    background-color: #fff;
+a:visited {
+    color: #000;
+}
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    
-        & li {
+header {
+    background-color: #fff;
+    position: fixed;
+    height: var(--header-height);
+    padding: .5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 1px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    nav { 
+        padding: 5px;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 10px;
+
+        ul {
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: space-between;
-            border-bottom: .5px solid rgb(201, 201, 201);
-            margin-bottom: 5px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .5rem ;
+            
+            a {
+                padding: 3px;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
         }
     }
 }
 
+section {
+    padding-top: calc(var(--header-height) + 10px);
+    
+    &:not(:last-of-type){
+        margin-bottom: calc(-1 * var(--header-height));
+    }
+    
+    > div {
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #fff;
+        margin: 0 auto 1rem;
+        max-width: 500px;
+        padding: 15px;
+
+        ul  li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .5px solid rgb(201, 201, 201);
+            margin-bottom: 5px;
+            padding: 0 5px;
+            
+            &:hover, &:hover a{
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    
+}
+
+nav ul, section > div > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .bold {
     font-weight: bold;
+}
+
+/* PC */
+@media screen and (min-width: 800px) {
+    header {
+        height: var(--header-pc-height);
+
+        nav {
+            position: absolute;
+            top: calc(var(--header-pc-height) + 1rem);
+            right: 1rem;
+            background-color: #fff;
+            padding: 2rem 1rem;
+
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+
+    section {
+        padding-top: calc(var(--header-pc-height) + 10px);
+
+        &:not(:last-of-type){
+            margin-bottom: calc(-1 * var(--header-pc-height));
+        }
+    }
 }
