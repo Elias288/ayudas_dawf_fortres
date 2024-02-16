@@ -3,18 +3,13 @@
     font-family: 'Roboto', monospace;
     scroll-behavior: smooth;
 
-    --header-height: 60px;
+    --header-height: 100px;
     --header-pc-height: 60px;
 }
 
 body {
     background-color: rgb(26, 25, 51);
     padding: 0;
-    margin: 0;
-}
-
-h1 {
-    text-align: center;
     margin: 0;
 }
 
@@ -42,6 +37,12 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
+    h1 {
+        margin: 0;
+        text-wrap: wrap;
+        max-width: 80%;
+    }
+
     label {
         cursor: pointer;
         user-select: none;
@@ -61,9 +62,10 @@ header {
 
             li {
                 a {
-                    width: 100%;
+                    width: 70%;
                     display: block;
-                    padding: 1rem 10rem;
+                    margin: 0 auto;
+                    padding: 1rem;
 
                     &:hover {
                         background-color: #000;
@@ -148,6 +150,7 @@ section>div>ul {
     padding: 3px 10px;
     border-radius: 5px;
     font-family: monospace;
+    height: fit-content;
 }
 
 footer {
@@ -182,14 +185,23 @@ footer {
         height: var(--header-pc-height);
         padding: .5rem;
 
+        h1 {
+            max-width: initial;
+            text-align: center;
+        }
+
         nav {
             background-color: #fff;
             display: block;
             width: fit-content;
             padding: 0;
             padding: 20px 30px;
+            top: var(--header-pc-height);
+            height: calc(100vh - var(--header-pc-height));
 
             ul li a {
+                width: 100%;
+
                 padding: 10px;
             }
         }
