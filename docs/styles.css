@@ -50,27 +50,38 @@ header {
 
     nav {
         background-color: rgba(255, 255, 255, 0.95);
-        display: none;
-        position: absolute;
+
+        position: fixed;
         top: var(--header-height);
         right: 0;
-        width: 100%;
+
         height: calc(100vh - var(--header-height));
+        width: 0;
+        transition: 0.5s;
+        overflow-x: hidden;
 
         ul {
             padding: 1rem 0;
 
             li {
+                border-radius: 10px;
+                background-color: #fff;
+
+                width: 70%;
+                margin: 0 auto .5rem;
+
                 a {
-                    width: 70%;
                     display: block;
-                    margin: 0 auto;
                     padding: 1rem;
+                    min-width: max-content;
 
                     &:hover {
-                        background-color: #000;
                         color: #fff;
                     }
+                }
+
+                &:hover {
+                    background-color: #000;
                 }
             }
 
@@ -90,10 +101,6 @@ header {
 
     >input {
         display: none;
-
-        &:checked+nav {
-            display: block;
-        }
     }
 }
 
@@ -219,16 +226,18 @@ footer {
         nav {
             background-color: #fff;
             display: block;
-            width: fit-content;
-            padding: 0;
             padding: 20px 30px;
             top: var(--header-pc-height);
             height: calc(100vh - var(--header-pc-height));
+            width: fit-content;
 
-            ul li a {
-                width: 100%;
+            ul li {
+                width: auto;
 
-                padding: 10px;
+                a {
+                    width: 100%;
+                    padding: 10px;
+                }
             }
         }
 

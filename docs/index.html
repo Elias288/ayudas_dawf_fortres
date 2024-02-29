@@ -18,9 +18,11 @@
         <header>
             <h1>Ayudas Dwarf Fortress Clasico</h1>
 
-            <label for="showMenu" id="MenuToggle"><img src="./assets/menu-svgrepo-com.svg" alt="menu"></label>
+            <span for="showMenu" id="MenuToggle" onclick="toggleSideNav()"><img src="./assets/menu-svgrepo-com.svg"
+                    alt="menu"></span>
             <input type="checkbox" name="showMenu" id="showMenu">
-            <nav>
+
+            <nav id="sideNav">
                 <ul>
                     <li onclick="disableMenu()"><a href="#Menu">Menú</a></li>
                     <li onclick="disableMenu()"><a href="#Comandos">Comandos generales</a></li>
@@ -466,10 +468,36 @@
     </footer>
 
     <script>
+        let isNavOpen = false;
+
         disableMenu = () => {
-            let checkbox = document.getElementById('showMenu');
-            checkbox.checked = false;
+            const windowWidth = window.innerWidth;
+            if (windowWidth <= 1000) {
+                document.getElementById("sideNav").style.width = "0"
+                isNavOpen = false;
+            }
         };
+
+        toggleSideNav = () => {
+            if (isNavOpen) {
+                document.getElementById("sideNav").style.width = "0"
+                isNavOpen = false;
+            } else {
+                document.getElementById("sideNav").style.width = "100%"
+                isNavOpen = true
+            }
+        };
+
+        onresize = (evt) => {
+            const windowWidth = window.innerWidth;
+
+            if (windowWidth >= 1000)
+                document.getElementById("sideNav").style.width = "fit-content"
+            else {
+                document.getElementById("sideNav").style.width = "0"
+                isNavOpen = false;
+            }
+        }
     </script>
 </body>
 
