@@ -1,0 +1,140 @@
+header {
+    background-color: #fff;
+    box-shadow: 5px 1px 10px black;
+    padding: 1rem .5rem .5rem;
+
+    height: var(--header-height);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        margin: 0;
+        text-wrap: wrap;
+        max-width: 80%;
+    }
+
+    label {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.95);
+
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+
+        height: calc(100vh - var(--header-height));
+        width: 0;
+        transition: 0.5s;
+        overflow-x: hidden;
+
+        ul {
+            li {
+                background-color: #d4d4d4;
+
+                >* {
+                    display: block;
+                    padding: 1rem;
+                    min-width: max-content;
+                }
+
+                &:hover {
+                    background-color: #868686;
+                }
+            }
+
+        }
+
+        .dropdown {
+            &:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content {
+                display: none;
+
+                li {
+                    background-color: #e9e9e9;
+
+                    &:hover {
+                        background-color: #d4d4d4;
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+    }
+
+    #MenuToggle {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    >input {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        height: var(--header-pc-height);
+        padding: .5rem;
+
+        h1 {
+            max-width: initial;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fff;
+            display: block;
+            top: var(--header-pc-height);
+            height: calc(100vh - var(--header-pc-height));
+            width: 260px;
+            overflow: visible;
+
+            ul li {
+                width: auto;
+
+                a {
+                    width: 100%;
+                    padding: 10px 1rem;
+                }
+            }
+
+            .dropdown {
+                .dropdown-content {
+                    display: block;
+
+                    a{
+                        padding-left: 1.7rem;
+                    }
+                }
+            }
+        }
+
+        #MenuToggle {
+            display: none;
+        }
+    }
+}

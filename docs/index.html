@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayudas Dwarf Fortres</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -16,25 +18,31 @@
 <body>
     <main>
         <header>
-            <h1>Ayudas Dwarf Fortress Clasico</h1>
+            <h1>Ayudas Dwarf Fortress Clasico - Comandos</h1>
 
-            <span for="showMenu" id="MenuToggle" onclick="toggleSideNav()"><img src="./assets/menu-svgrepo-com.svg"
-                    alt="menu"></span>
+            <span for="showMenu" id="MenuToggle" onclick="toggleSideNav()">&#9776;</span>
             <input type="checkbox" name="showMenu" id="showMenu">
 
             <nav id="sideNav">
                 <ul>
-                    <li onclick="disableMenu()"><a href="#Menu">Menú</a></li>
-                    <li onclick="disableMenu()"><a href="#Comandos">Comandos generales</a></li>
-                    <li onclick="disableMenu()"><a href="#Construir">Construir</a></li>
-                    <li onclick="disableMenu()"><a href="#Info">Información del mundo</a></li>
-                    <li onclick="disableMenu()"><a href="#Designaciones">Designaciones</a></li>
-                    <li onclick="disableMenu()"><a href="#Zonas">Zonas</a></li>
-                    <li onclick="disableMenu()"><a href="#Encargos">Encargos</a></li>
-                    <li onclick="disableMenu()"><a href="#Reservas">Reservas</a></li>
-                    <li onclick="disableMenu()"><a href="#Talleres">Talleres</a></li>
-                    <li onclick="disableMenu()"><a href="#ParedSueloEscaleraVia">ParedSueloEscaleraVia</a></li>
-                    <li onclick="disableMenu()"><a href="#Trafico">Tráfico</a></li>
+                    <li onclick="disableMenu()"><a href="./guias.html">Guías</a></li>
+
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="#">Comandos <i class="fa fa-caret-down"></i></a></li>
+                        <ul class="dropdown-content">
+                            <li onclick="disableMenu()"><a href="#Menu">Menú</a></li>
+                            <li onclick="disableMenu()"><a href="#Comandos">Comandos generales</a></li>
+                            <li onclick="disableMenu()"><a href="#Construir">Construir</a></li>
+                            <li onclick="disableMenu()"><a href="#Info">Información del mundo</a></li>
+                            <li onclick="disableMenu()"><a href="#Designaciones">Designaciones</a></li>
+                            <li onclick="disableMenu()"><a href="#Zonas">Zonas</a></li>
+                            <li onclick="disableMenu()"><a href="#Encargos">Encargos</a></li>
+                            <li onclick="disableMenu()"><a href="#Reservas">Reservas</a></li>
+                            <li onclick="disableMenu()"><a href="#Talleres">Talleres</a></li>
+                            <li onclick="disableMenu()"><a href="#ParedSueloEscaleraVia">ParedSueloEscaleraVia</a></li>
+                            <li onclick="disableMenu()"><a href="#Trafico">Tráfico</a></li>
+                        </ul>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -49,7 +57,7 @@
 
                     <li>
                         <input type="radio" name="radio" id="Radio1">
-                        <label for="Radio1" onclick="showPath('Ver anuncios', 'a')">
+                        <label for="Radio1" onmouseenter="showPath('Ver anuncios', 'a')">
                             Ver anuncios <span class="inputKey bold">a</span>
                         </label>
                     </li>
@@ -73,19 +81,19 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio5">
-                        <label for="Radio5" onclick="showPath('Acceso al depósito', 'D')">
+                        <label for="Radio5" onmouseenter="showPath('Acceso al depósito', 'D')">
                             Acceso al depósito <span class="inputKey bold">D</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio6">
-                        <label for="Radio6" onclick="showPath('Saludos','h')">
+                        <label for="Radio6" onmouseenter="showPath('Saludos','h')">
                             Saludos <span class="inputKey bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio7">
-                        <label for="Radio7" onclick="showPath('Teclas de acceso rápido', 'H')">
+                        <label for="Radio7" onmouseenter="showPath('Teclas de acceso rápido', 'H')">
                             Teclas de acceso rápido <span class="inputKey bold">H</span>
                         </label>
                     </li>
@@ -97,25 +105,25 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio9">
-                        <label for="Radio9" onclick="showPath('Mirar','k')">
+                        <label for="Radio9" onmouseenter="showPath('Mirar','k')">
                             Mirar <span class="inputKey bold">k</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio10">
-                        <label for="Radio10" onclick="showPath('Lista de unidades', 'u')">
+                        <label for="Radio10" onmouseenter="showPath('Lista de unidades', 'u')">
                             Lista de unidades <span class="inputKey bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio11">
-                        <label for="Radio11" onclick="showPath('Militar', 'm')">
+                        <label for="Radio11" onmouseenter="showPath('Militar', 'm')">
                             Militar <span class="inputKey bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio12">
-                        <label for="Radio12" onclick="showPath('Punto/rutas/notas', 'N')">
+                        <label for="Radio12" onmouseenter="showPath('Punto/rutas/notas', 'N')">
                             Punto/rutas/notas <span class="inputKey bold">N</span>
                         </label>
                     </li>
@@ -127,13 +135,13 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio14">
-                        <label for="Radio14" onclick="showPath('Lista de trabajos', 'j')">
+                        <label for="Radio14" onmouseenter="showPath('Lista de trabajos', 'j')">
                             Lista de trabajos <span class="inputKey bold">j</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio15">
-                        <label for="Radio15" onclick="showPath('Hacer madrigueras', 'w')">
+                        <label for="Radio15" onmouseenter="showPath('Hacer madrigueras', 'w')">
                             Hacer madrigueras <span class="inputKey bold">w</span>
                         </label>
                     </li>
@@ -145,61 +153,61 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio17">
-                        <label for="Radio17" onclick="showPath('Establecer tareas de construcción/prefs', 'q')">
+                        <label for="Radio17" onmouseenter="showPath('Establecer tareas de construcción/prefs', 'q')">
                             Establecer tareas de construcción/prefs <span class="inputKey bold">q</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio18">
-                        <label for="Radio18" onclick="showPath('Informes', 'r')">
+                        <label for="Radio18" onmouseenter="showPath('Informes', 'r')">
                             Informes <span class="inputKey bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio19">
-                        <label for="Radio19" onclick="showPath('Ver habitaciones/edificios', 'R')">
+                        <label for="Radio19" onmouseenter="showPath('Ver habitaciones/edificios', 'R')">
                             Ver habitaciones/edificios <span class="inputKey bold">R</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio20">
-                        <label for="Radio20" onclick="showPath('Escuadras', 's')">
+                        <label for="Radio20" onmouseenter="showPath('Escuadras', 's')">
                             Escuadras <span class="inputKey bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio21">
-                        <label for="Radio21" onclick="showPath('Ver objetos en edificios', 't')">
+                        <label for="Radio21" onmouseenter="showPath('Ver objetos en edificios', 't')">
                             Ver objetos en edificios <span class="inputKey bold">t</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio22">
-                        <label for="Radio22" onclick="showPath('Ver unidades', 'v')">
+                        <label for="Radio22" onmouseenter="showPath('Ver unidades', 'v')">
                             Ver unidades <span class="inputKey bold">v</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio23">
-                        <label for="Radio23" onclick="showPath('Lugares y ocupaciones', 'l')">
+                        <label for="Radio23" onmouseenter="showPath('Lugares y ocupaciones', 'l')">
                             Lugares y ocupaciones <span class="inputKey bold">l</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio24">
-                        <label for="Radio24" onclick="showPath('Nobles y administradores', 'n')">
+                        <label for="Radio24" onmouseenter="showPath('Nobles y administradores', 'n')">
                             Nobles y administradores <span class="inputKey bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio25">
-                        <label for="Radio25" onclick="showPath('Estado', 'z')">
+                        <label for="Radio25" onmouseenter="showPath('Estado', 'z')">
                             Estado <span class="inputKey bold">z</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="Radio26">
-                        <label for="Radio26" onclick="showPath('Mover este menú/mapa', 'Tab')">
+                        <label for="Radio26" onmouseenter="showPath('Mover este menú/mapa', 'Tab')">
                             Mover este menú/mapa <span class="inputKey bold">Tab</span>
                         </label>
                     </li>
@@ -253,124 +261,125 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio27">
-                        <label for="radio27" onclick="showPath('Soporte de armadura', 'b + a')">
+                        <label for="radio27" onmouseenter="showPath('Soporte de armadura', 'b + a')">
                             Soporte de armadura <span class="bold">a</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio28">
-                        <label for="radio28" onclick="showPath('Cama', 'b + b')">Cama <span
+                        <label for="radio28" onmouseenter="showPath('Cama', 'b + b')">Cama <span
                                 class="bold">b</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio29">
-                        <label for="radio29" onclick="showPath('Asiento', 'b + c')">Asiento <span
+                        <label for="radio29" onmouseenter="showPath('Asiento', 'b + c')">Asiento <span
                                 class="bold">c</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio30">
-                        <label for="radio30" onclick="showPath('Tumba', 'b + n')">Tumba <span
+                        <label for="radio30" onmouseenter="showPath('Tumba', 'b + n')">Tumba <span
                                 class="bold">n</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio31">
-                        <label for="radio31" onclick="showPath('Puerta', 'b + d')">Puerta <span
+                        <label for="radio31" onmouseenter="showPath('Puerta', 'b + d')">Puerta <span
                                 class="bold">d</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio32">
-                        <label for="radio32" onclick="showPath('Compuerta', 'b + x')">Compuerta <span
+                        <label for="radio32" onmouseenter="showPath('Compuerta', 'b + x')">Compuerta <span
                                 class="bold">x</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio33">
-                        <label for="radio33" onclick="showPath('Compuerta del suelo', 'b + H')">Compuerta del suelo
+                        <label for="radio33" onmouseenter="showPath('Compuerta del suelo', 'b + H')">Compuerta del suelo
                             <span class="bold">H</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio34">
-                        <label for="radio34" onclick="showPath('Regilla de pared', 'b + W')">Regilla de pared <span
+                        <label for="radio34" onmouseenter="showPath('Regilla de pared', 'b + W')">Regilla de pared <span
                                 class="bold">W</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio35">
-                        <label for="radio35" onclick="showPath('Regilla del suelo', 'b + G')">Regilla del suelo <span
-                                class="bold">G</span></label>
+                        <label for="radio35" onmouseenter="showPath('Regilla del suelo', 'b + G')">Regilla del suelo
+                            <span class="bold">G</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio36">
-                        <label for="radio36" onclick="showPath('Barras verticales', 'b + B')">Barras verticales <span
-                                class="bold">B</span></label>
+                        <label for="radio36" onmouseenter="showPath('Barras verticales', 'b + B')">Barras verticales
+                            <span class="bold">B</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio37">
-                        <label for="radio37" onclick="showPath('Barras de suelo', 'b + Alt + b')">Barras de suelo <span
-                                class="bold">Alt + b</span></label>
+                        <label for="radio37" onmouseenter="showPath('Barras de suelo', 'b + Alt + b')">Barras de suelo
+                            <span class="bold">Alt + b</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio38">
-                        <label for="radio38" onclick="showPath('Armario', 'b + f')">Armario <span
+                        <label for="radio38" onmouseenter="showPath('Armario', 'b + f')">Armario <span
                                 class="bold">f</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio39">
-                        <label for="radio39" onclick="showPath('Contenedor', 'b + h')">Contenedor <span
+                        <label for="radio39" onmouseenter="showPath('Contenedor', 'b + h')">Contenedor <span
                                 class="bold">h</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio40">
-                        <label for="radio40" onclick="showPath('Perreras', 'b + k')">Perreras <span
+                        <label for="radio40" onmouseenter="showPath('Perreras', 'b + k')">Perreras <span
                                 class="bold">k</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio41">
-                        <label for="radio41" onclick="showPath('Parcela agricola', 'b + p')">Parcela agricola <span
+                        <label for="radio41" onmouseenter="showPath('Parcela agricola', 'b + p')">Parcela agricola <span
                                 class="bold">p</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio42">
-                        <label for="radio42" onclick="showPath('Estante de armas', 'b + r')">Estante de armas <span
+                        <label for="radio42" onmouseenter="showPath('Estante de armas', 'b + r')">Estante de armas <span
                                 class="bold">r</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio43">
-                        <label for="radio43" onclick="showPath('Estatua', 'b + s')">Estatua <span
+                        <label for="radio43" onmouseenter="showPath('Estatua', 'b + s')">Estatua <span
                                 class="bold">s</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio44">
-                        <label for="radio44" onclick="showPath('Losa', 'b + Alt + s')">Losa <span class="bold">Alt +
+                        <label for="radio44" onmouseenter="showPath('Losa', 'b + Alt + s')">Losa <span class="bold">Alt
+                                +
                                 s</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio45">
-                        <label for="radio45" onclick="showPath('Mesa', 'b + t')">Mesa <span
+                        <label for="radio45" onmouseenter="showPath('Mesa', 'b + t')">Mesa <span
                                 class="bold">t</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio46">
-                        <label for="radio46" onclick="showPath('', 'b + o')">Camino pavimentado <span
+                        <label for="radio46" onmouseenter="showPath('', 'b + o')">Camino pavimentado <span
                                 class="bold">o</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio47">
-                        <label for="radio47" onclick="showPath('Camino de tierra', 'b + O')">Camino de tierra <span
+                        <label for="radio47" onmouseenter="showPath('Camino de tierra', 'b + O')">Camino de tierra <span
                                 class="bold">O</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio48">
-                        <label for="radio48" onclick="showPath('Puente', 'b + g')">Puente <span
+                        <label for="radio48" onmouseenter="showPath('Puente', 'b + g')">Puente <span
                                 class="bold">g</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio49">
-                        <label for="radio49" onclick="showPath('Pozo', 'b + l')">Pozo <span
+                        <label for="radio49" onmouseenter="showPath('Pozo', 'b + l')">Pozo <span
                                 class="bold">l</span></label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio50">
-                        <label for="radio50" onclick="showPath('Máquinas de asedio', 'b + i')">Máquinas de asedio <span
-                                class="bold">i</span></label>
+                        <label for="radio50" onmouseenter="showPath('Máquinas de asedio', 'b + i')">Máquinas de asedio
+                            <span class="bold">i</span></label>
                     </li>
                     <li>
                         <label>
@@ -380,25 +389,25 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio51">
-                        <label for="radio51" onclick="showPath('Hornos', 'b + e')">
+                        <label for="radio51" onmouseenter="showPath('Hornos', 'b + e')">
                             Hornos <span class="bold">e</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio52">
-                        <label for="radio52" onclick="showPath('granja', 'b + p')">
+                        <label for="radio52" onmouseenter="showPath('granja', 'b + p')">
                             granja <span class="bold">p</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio53">
-                        <label for="radio53" onclick="showPath('Ventana de vidrio', 'b + y')">
+                        <label for="radio53" onmouseenter="showPath('Ventana de vidrio', 'b + y')">
                             Ventana de vidrio <span class="bold">y</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio54">
-                        <label for="radio54" onclick="showPath('Ventana de gemas', 'b + Y')">
+                        <label for="radio54" onmouseenter="showPath('Ventana de gemas', 'b + Y')">
                             Ventana de gemas <span class="bold">Y</span>
                         </label>
                     </li>
@@ -410,91 +419,91 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio55">
-                        <label for="radio55" onclick="showPath('Depósito comercial', 'b + D')">
+                        <label for="radio55" onmouseenter="showPath('Depósito comercial', 'b + D')">
                             Depósito comercial <span class="bold">D</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio56">
-                        <label for="radio56" onclick="showPath('Trampas/palanca', 'b + T')">
+                        <label for="radio56" onmouseenter="showPath('Trampas/palanca', 'b + T')">
                             Trampas/palanca <span class="bold">T</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio57">
-                        <label for="radio57" onclick="showPath('Componentes mecánicos', 'b + M')">
+                        <label for="radio57" onmouseenter="showPath('Componentes mecánicos', 'b + M')">
                             Componentes mecánicos <span class="bold">M</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio58">
-                        <label for="radio58" onclick="showPath('Instrumentos', 'b + I')">
+                        <label for="radio58" onmouseenter="showPath('Instrumentos', 'b + I')">
                             Instrumentos <span class="bold">I</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio59">
-                        <label for="radio59" onclick="showPath('Soporte', 'b + S')">
+                        <label for="radio59" onmouseenter="showPath('Soporte', 'b + S')">
                             Soporte <span class="bold">S</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio60">
-                        <label for="radio60" onclick="showPath('Trampa para animales', 'b + m')">
+                        <label for="radio60" onmouseenter="showPath('Trampa para animales', 'b + m')">
                             Trampa para animales <span class="bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio61">
-                        <label for="radio61" onclick="showPath('Jaula', 'b + v')">
+                        <label for="radio61" onmouseenter="showPath('Jaula', 'b + v')">
                             Jaula <span class="bold">v</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio62">
-                        <label for="radio62" onclick="showPath('Caja', 'b + j')">
+                        <label for="radio62" onmouseenter="showPath('Caja', 'b + j')">
                             Caja <span class="bold">j</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio63">
-                        <label for="radio63" onclick="showPath('', 'b + A')">
+                        <label for="radio63" onmouseenter="showPath('', 'b + A')">
                             Diana de arqueria <span class="bold">A</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio64">
-                        <label for="radio64" onclick="showPath('Banco de tiro', 'b + R')">
+                        <label for="radio64" onmouseenter="showPath('Banco de tiro', 'b + R')">
                             Banco de tiro <span class="bold">R</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio65">
-                        <label for="radio65" onclick="showPath('Nido en caja', 'b + N')">
+                        <label for="radio65" onmouseenter="showPath('Nido en caja', 'b + N')">
                             Nido en caja <span class="bold">N</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio66">
-                        <label for="radio66" onclick="showPath('Colmena', 'b + Alt + h')">
+                        <label for="radio66" onmouseenter="showPath('Colmena', 'b + Alt + h')">
                             Colmena <span class="bold">Alt + h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio67">
-                        <label for="radio67" onclick="showPath('Lugar de ofrenda', 'b + Alt + a')">
+                        <label for="radio67" onmouseenter="showPath('Lugar de ofrenda', 'b + Alt + a')">
                             Lugar de ofrenda <span class="bold">Alt + a</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio68">
-                        <label for="radio68" onclick="showPath('Estanteria', 'b + Alt + c')">
+                        <label for="radio68" onmouseenter="showPath('Estanteria', 'b + Alt + c')">
                             Estanteria <span class="bold">Alt + c</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio69">
-                        <label for="radio69" onclick="showPath('Muebles de exposición', 'b + F')">
+                        <label for="radio69" onmouseenter="showPath('Muebles de exposición', 'b + F')">
                             Muebles de exposición <span class="bold">F</span>
                         </label>
                     </li>
@@ -512,49 +521,49 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio70">
-                        <label for="radio70" onclick="showPath('Centrar en la fortaleza', 'c + y')">
+                        <label for="radio70" onmouseenter="showPath('Centrar en la fortaleza', 'c + y')">
                             Centrar en la fortaleza <span class="bold">y</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio71">
-                        <label for="radio71" onclick="showPath('Retención y tributos', 'c + h')">
+                        <label for="radio71" onmouseenter="showPath('Retención y tributos', 'c + h')">
                             Retención y tributos <span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio72">
-                        <label for="radio72" onclick="showPath('Mundo', 'c + w')">
+                        <label for="radio72" onmouseenter="showPath('Mundo', 'c + w')">
                             Mundo <span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio73">
-                        <label for="radio73" onclick="showPath('Misiones', 'c + m')">
+                        <label for="radio73" onmouseenter="showPath('Misiones', 'c + m')">
                             Misiones <span class="bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio74">
-                        <label for="radio74" onclick="showPath('Noticias y rumores', 'c + n')">
+                        <label for="radio74" onmouseenter="showPath('Noticias y rumores', 'c + n')">
                             Noticias y rumores <span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio75">
-                        <label for="radio75" onclick="showPath('Personas', 'c + p')">
+                        <label for="radio75" onmouseenter="showPath('Personas', 'c + p')">
                             Personas <span class="bold">p</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio76">
-                        <label for="radio76" onclick="showPath('Artefactos', 'c + a')">
+                        <label for="radio76" onmouseenter="showPath('Artefactos', 'c + a')">
                             Artefactos <span class="bold">a</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio77">
-                        <label for="radio77" onclick="showPath('Civilizaciones', 'c + c')">
+                        <label for="radio77" onmouseenter="showPath('Civilizaciones', 'c + c')">
                             Civilizaciones <span class="bold">c</span>
                         </label>
                     </li>
@@ -572,103 +581,104 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio78">
-                        <label for="radio78" onclick="showPath('Minar', 'd + d')">
+                        <label for="radio78" onmouseenter="showPath('Minar', 'd + d')">
                             Minar <span class="bold">d</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio79">
-                        <label for="radio79" onclick="showPath('Escalera arriba', 'd + u')">
+                        <label for="radio79" onmouseenter="showPath('Escalera arriba', 'd + u')">
                             Escalera arriba <span class="bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio80">
-                        <label for="radio80" onclick="showPath('Escalera abajo', 'd + j')">
+                        <label for="radio80" onmouseenter="showPath('Escalera abajo', 'd + j')">
                             Escalera abajo <span class="bold">j</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio81">
-                        <label for="radio81" onclick="showPath('Escalera arriba/abajo', 'd + i')">
+                        <label for="radio81" onmouseenter="showPath('Escalera arriba/abajo', 'd + i')">
                             Escalera arriba/abajo <span class="bold">i</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio82">
-                        <label for="radio82" onclick="showPath('Rampa arriba', 'd + r')">
+                        <label for="radio82" onmouseenter="showPath('Rampa arriba', 'd + r')">
                             Rampa arriba <span class="bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio83">
-                        <label for="radio83" onclick="showPath('Quitar escaleras/rampas arriba', 'd + z')">
+                        <label for="radio83" onmouseenter="showPath('Quitar escaleras/rampas arriba', 'd + z')">
                             Quitar escaleras/rampas arriba <span class="bold">z</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio84">
-                        <label for="radio84" onclick="showPath('Talar árboles', 'd + t')">
+                        <label for="radio84" onmouseenter="showPath('Talar árboles', 'd + t')">
                             Talar árboles <span class="bold">t</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio85">
-                        <label for="radio85" onclick="showPath('Recoger plantas', 'd + p')">
+                        <label for="radio85" onmouseenter="showPath('Recoger plantas', 'd + p')">
                             Recoger plantas <span class="bold">p</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio86">
-                        <label for="radio86" onclick="showPath('Piedra liza', 'd + s')">
+                        <label for="radio86" onmouseenter="showPath('Piedra liza', 'd + s')">
                             Piedra liza <span class="bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio87">
-                        <label for="radio87" onclick="showPath('Grabar piedra', 'd + e')">
+                        <label for="radio87" onmouseenter="showPath('Grabar piedra', 'd + e')">
                             Grabar piedra <span class="bold">e</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio88">
-                        <label for="radio88" onclick="showPath('Tallar fortificaciones', 'd + f')">
+                        <label for="radio88" onmouseenter="showPath('Tallar fortificaciones', 'd + f')">
                             Tallar fortificaciones <span class="bold">F</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio89">
-                        <label for="radio89" onclick="showPath('Tallar via', 'd + T')">
+                        <label for="radio89" onmouseenter="showPath('Tallar via', 'd + T')">
                             Tallar via <span class="bold">T</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio90">
-                        <label for="radio90" onclick="showPath('Grabados de palanca', 'd + v')">
+                        <label for="radio90" onmouseenter="showPath('Grabados de palanca', 'd + v')">
                             Grabados de palanca <span class="bold">v</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio91">
-                        <label for="radio91" onclick="showPath('Norma/marca de palanca', 'd + M')">
+                        <label for="radio91" onmouseenter="showPath('Norma/marca de palanca', 'd + M')">
                             Norma/marca de palanca <span class="bold">M</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio92">
-                        <label for="radio92" onclick="showPath('Quitar construcción', 'd + n')">
+                        <label for="radio92" onmouseenter="showPath('Quitar construcción', 'd + n')">
                             Quitar construcción <span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio93">
-                        <label for="radio93" onclick="showPath('Quitar asignacion', 'd + x')">
+                        <label for="radio93" onmouseenter="showPath('Quitar asignacion', 'd + x')">
                             Quitar asignacion <span class="bold">x</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio94">
-                        <label for="radio94" onclick="showPath('Establecer la propiedad del edificio/item', 'd + b')">
+                        <label for="radio94"
+                            onmouseenter="showPath('Establecer la propiedad del edificio/item', 'd + b')">
                             Establecer la propiedad del edificio/item <span class="bold">b</span>
                         </label>
                     </li>
@@ -680,7 +690,7 @@
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio95">
-                        <label for="radio95" onclick="showPath('Canal', 'd + h')">
+                        <label for="radio95" onmouseenter="showPath('Canal', 'd + h')">
                             Canal <span class="bold">h</span>
                         </label>
                     </li>
@@ -698,67 +708,67 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio96">
-                        <label for="radio96" onclick="showPath('Fuente de agua', 'i + w')">
+                        <label for="radio96" onmouseenter="showPath('Fuente de agua', 'i + w')">
                             Fuente de agua<span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio97">
-                        <label for="radio97" onclick="showPath('Pesca', 'i + f')">
+                        <label for="radio97" onmouseenter="showPath('Pesca', 'i + f')">
                             Pesca<span class="bold">f</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio98">
-                        <label for="radio98" onclick="showPath('Recoger fruta', 'i + g')">
+                        <label for="radio98" onmouseenter="showPath('Recoger fruta', 'i + g')">
                             Recoger fruta<span class="bold">g</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio99">
-                        <label for="radio99" onclick="showPath('Vertedero', 'i + d')">
+                        <label for="radio99" onmouseenter="showPath('Vertedero', 'i + d')">
                             Vertedero<span class="bold">d</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio100">
-                        <label for="radio100" onclick="showPath('Corral/Pasto', 'i + n')">
+                        <label for="radio100" onmouseenter="showPath('Corral/Pasto', 'i + n')">
                             Corral/Pasto<span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio101">
-                        <label for="radio101" onclick="showPath('Foso/estanque', 'i + p')">
+                        <label for="radio101" onmouseenter="showPath('Foso/estanque', 'i + p')">
                             Foso/estanque<span class="bold">p</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio102">
-                        <label for="radio102" onclick="showPath('Arena', 'i + s')">
+                        <label for="radio102" onmouseenter="showPath('Arena', 'i + s')">
                             Arena<span class="bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio103">
-                        <label for="radio103" onclick="showPath('Zona de reuniones', 'i + m')">
+                        <label for="radio103" onmouseenter="showPath('Zona de reuniones', 'i + m')">
                             Zona de reuniones<span class="bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio104">
-                        <label for="radio104" onclick="showPath('Hospital', 'i + h')">
+                        <label for="radio104" onmouseenter="showPath('Hospital', 'i + h')">
                             Hospital<span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio105">
-                        <label for="radio105" onclick="showPath('Adiestramiento de animales', 'i + t')">
+                        <label for="radio105" onmouseenter="showPath('Adiestramiento de animales', 'i + t')">
                             Adiestramiento de animales<span class="bold">t</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio106">
-                        <label for="radio106" onclick="showPath('Activo', 'i + a')">
+                        <label for="radio106" onmouseenter="showPath('Activo', 'i + a')">
                             Activo<span class="bold">a</span>
                         </label>
                     </li>
@@ -776,79 +786,79 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio107">
-                        <label for="radio107" onclick="showPath('Anunciar una cancelación de empleo', 'o + x')">
+                        <label for="radio107" onmouseenter="showPath('Anunciar una cancelación de empleo', 'o + x')">
                             Anunciar una cancelación de empleo <span class="bold">x</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio108">
-                        <label for="radio108" onclick="showPath('Enanos reunir animales', 'o + a')">
+                        <label for="radio108" onmouseenter="showPath('Enanos reunir animales', 'o + a')">
                             Enanos reunir animales <span class="bold">a</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio109">
-                        <label for="radio109" onclick="showPath('Enanos reunir comida', 'o + f')">
+                        <label for="radio109" onmouseenter="showPath('Enanos reunir comida', 'o + f')">
                             Enanos reunir comida <span class="bold">f</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio110">
-                        <label for="radio110" onclick="showPath('Enanos reunir muebles', 'o + u')">
+                        <label for="radio110" onmouseenter="showPath('Enanos reunir muebles', 'o + u')">
                             Enanos reunir muebles <span class="bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio111">
-                        <label for="radio111" onclick="showPath('Enanos reunir cadáveres', 'o + g')">
+                        <label for="radio111" onmouseenter="showPath('Enanos reunir cadáveres', 'o + g')">
                             Enanos reunir cadáveres <span class="bold">g</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio112">
-                        <label for="radio112" onclick="showPath('Desechar', 'o + r')">
+                        <label for="radio112" onmouseenter="showPath('Desechar', 'o + r')">
                             Desechar<span class="bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio113">
-                        <label for="radio113" onclick="showPath('Prohibir', 'o + F')">
+                        <label for="radio113" onmouseenter="showPath('Prohibir', 'o + F')">
                             Prohibir<span class="bold">F</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio114">
-                        <label for="radio114" onclick="showPath('Enanos reunir minerales', 'o + s')">
+                        <label for="radio114" onmouseenter="showPath('Enanos reunir minerales', 'o + s')">
                             Enanos reunir minerales<span class="bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio115">
-                        <label for="radio115" onclick="showPath('Enanos reunir madera', 'o + w')">
+                        <label for="radio115" onmouseenter="showPath('Enanos reunir madera', 'o + w')">
                             Enanos reunir madera<span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio116">
-                        <label for="radio116" onclick="showPath('Enanos reunir la cosecha', 'o + h')">
+                        <label for="radio116" onmouseenter="showPath('Enanos reunir la cosecha', 'o + h')">
                             Enanos reunir la cosecha<span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio117">
-                        <label for="radio117" onclick="showPath('Mezclar alimentos', 'o + m')">
+                        <label for="radio117" onmouseenter="showPath('Mezclar alimentos', 'o + m')">
                             Mezclar alimentos<span class="bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio118">
-                        <label for="radio118" onclick="showPath('Encargos de taller', 'o + W')">
+                        <label for="radio118" onmouseenter="showPath('Encargos de taller', 'o + W')">
                             Encargos de taller<span class="bold">W</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio119">
-                        <label for="radio119" onclick="showPath('Encargos en zonas de actividad', 'o + z')">
+                        <label for="radio119" onmouseenter="showPath('Encargos en zonas de actividad', 'o + z')">
                             Encargos en zonas de actividad<span class="bold">z</span>
                         </label>
                     </li>
@@ -866,121 +876,121 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio120">
-                        <label for="radio120" onclick="showPath('Animales', 'p + a')">
+                        <label for="radio120" onmouseenter="showPath('Animales', 'p + a')">
                             Animales <span class="bold">a</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio121">
-                        <label for="radio121" onclick="showPath('Muebles', 'p + u')">
+                        <label for="radio121" onmouseenter="showPath('Muebles', 'p + u')">
                             Muebles <span class="bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio122">
-                        <label for="radio122" onclick="showPath('Cuerpos', 'p + y')">
+                        <label for="radio122" onmouseenter="showPath('Cuerpos', 'p + y')">
                             Cuerpos <span class="bold">y</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio123">
-                        <label for="radio123" onclick="showPath('Piedras', 'p + s')">
+                        <label for="radio123" onmouseenter="showPath('Piedras', 'p + s')">
                             Piedras <span class="bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio124">
-                        <label for="radio124" onclick="showPath('Gemas', 'p + e')">
+                        <label for="radio124" onmouseenter="showPath('Gemas', 'p + e')">
                             Gemas <span class="bold">e</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio125">
-                        <label for="radio125" onclick="showPath('Ropa', 'p + h')">
+                        <label for="radio125" onmouseenter="showPath('Ropa', 'p + h')">
                             Ropa <span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio126">
-                        <label for="radio126" onclick="showPath('Municiones', 'p + z')">
+                        <label for="radio126" onmouseenter="showPath('Municiones', 'p + z')">
                             Municiones <span class="bold">z</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio127">
-                        <label for="radio127" onclick="showPath('Productos acabados', 'p + g')">
+                        <label for="radio127" onmouseenter="showPath('Productos acabados', 'p + g')">
                             Productos acabados <span class="bold">g</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio128">
-                        <label for="radio128" onclick="showPath('Armas', 'p + p')">
+                        <label for="radio128" onmouseenter="showPath('Armas', 'p + p')">
                             Armas <span class="bold">p</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio129">
-                        <label for="radio129" onclick="showPath('Reservas personalizadas', 'p + c')">
+                        <label for="radio129" onmouseenter="showPath('Reservas personalizadas', 'p + c')">
                             Reservas personalizadas <span class="bold">c</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio130">
-                        <label for="radio130" onclick="showPath('Seleccion personalizada', 'p + t')">
+                        <label for="radio130" onmouseenter="showPath('Seleccion personalizada', 'p + t')">
                             Seleccion personalizada <span class="bold">t</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio131">
-                        <label for="radio131" onclick="showPath('Comida', 'p + f')">
+                        <label for="radio131" onmouseenter="showPath('Comida', 'p + f')">
                             Comida <span class="bold">f</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio132">
-                        <label for="radio132" onclick="showPath('Monedas', 'p + n')">
+                        <label for="radio132" onmouseenter="showPath('Monedas', 'p + n')">
                             Monedas <span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio133">
-                        <label for="radio133" onclick="showPath('Basura', 'p + r')">
+                        <label for="radio133" onmouseenter="showPath('Basura', 'p + r')">
                             Basura <span class="bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio134">
-                        <label for="radio134" onclick="showPath('Madera', 'p + w')">
+                        <label for="radio134" onmouseenter="showPath('Madera', 'p + w')">
                             Madera <span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio135">
-                        <label for="radio135" onclick="showPath('Barra/bloque', 'p + b')">
+                        <label for="radio135" onmouseenter="showPath('Barra/bloque', 'p + b')">
                             Barra/bloque <span class="bold">b</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio136">
-                        <label for="radio136" onclick="showPath('Cuero', 'p + l')">
+                        <label for="radio136" onmouseenter="showPath('Cuero', 'p + l')">
                             Cuero <span class="bold">l</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio137">
-                        <label for="radio137" onclick="showPath('Hojas', 'p + S')">
+                        <label for="radio137" onmouseenter="showPath('Hojas', 'p + S')">
                             Hojas <span class="bold">S</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio138">
-                        <label for="radio138" onclick="showPath('Armadura', 'p + d')">
+                        <label for="radio138" onmouseenter="showPath('Armadura', 'p + d')">
                             Armadura <span class="bold">d</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio139">
-                        <label for="radio139" onclick="showPath('Quitar designación', 'p + x')">
+                        <label for="radio139" onmouseenter="showPath('Quitar designación', 'p + x')">
                             Quitar designación <span class="bold">x</span>
                         </label>
                     </li>
@@ -998,139 +1008,139 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio140">
-                        <label for="radio140" onclick="showPath('Cuero', 'b + w + e')">
+                        <label for="radio140" onmouseenter="showPath('Cuero', 'b + w + e')">
                             Cuero <span class="bold">e</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio141">
-                        <label for="radio141" onclick="showPath('Quern', 'b + w + q')">
+                        <label for="radio141" onmouseenter="showPath('Quern', 'b + w + q')">
                             Quern <span class="bold">q</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio142">
-                        <label for="radio142" onclick="showPath('Piedra de molino', 'b + w + M')">
+                        <label for="radio142" onmouseenter="showPath('Piedra de molino', 'b + w + M')">
                             Piedra de molino <span class="bold">M</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio143">
-                        <label for="radio143" onclick="showPath('Telar', 'b + w + o')">
+                        <label for="radio143" onmouseenter="showPath('Telar', 'b + w + o')">
                             Telar <span class="bold">o</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio144">
-                        <label for="radio144" onclick="showPath('Tienda de Ropa', 'b + w + k')">
+                        <label for="radio144" onmouseenter="showPath('Tienda de Ropa', 'b + w + k')">
                             Tienda de Ropa <span class="bold">k</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio145">
-                        <label for="radio145" onclick="showPath('Arqueria', 'b + w + b')">
+                        <label for="radio145" onmouseenter="showPath('Arqueria', 'b + w + b')">
                             Arqueria <span class="bold">b</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio146">
-                        <label for="radio146" onclick="showPath('Carpintero', 'b + w + c')">
+                        <label for="radio146" onmouseenter="showPath('Carpintero', 'b + w + c')">
                             Carpintero <span class="bold">c</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio147">
-                        <label for="radio147" onclick="showPath('Forja', 'b + w + f')">
+                        <label for="radio147" onmouseenter="showPath('Forja', 'b + w + f')">
                             Forja <span class="bold">f</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio148">
-                        <label for="radio148" onclick="showPath('Joyeros', 'b + w + j')">
+                        <label for="radio148" onmouseenter="showPath('Joyeros', 'b + w + j')">
                             Joyeros <span class="bold">j</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio149">
-                        <label for="radio149" onclick="showPath('Albañileria', 'b + w + m')">
+                        <label for="radio149" onmouseenter="showPath('Albañileria', 'b + w + m')">
                             Albañileria <span class="bold">m</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio150">
-                        <label for="radio150" onclick="showPath('Carnicería', 'b + w + u')">
+                        <label for="radio150" onmouseenter="showPath('Carnicería', 'b + w + u')">
                             Carnicería <span class="bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio151">
-                        <label for="radio151" onclick="showPath('Curtidores', 'b + w + n')">
+                        <label for="radio151" onmouseenter="showPath('Curtidores', 'b + w + n')">
                             Curtidores <span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio152">
-                        <label for="radio152" onclick="showPath('Artesanos', 'b + w + r')">
+                        <label for="radio152" onmouseenter="showPath('Artesanos', 'b + w + r')">
                             Artesanos <span class="bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio153">
-                        <label for="radio153" onclick="showPath('Taller de asedio', 'b + w + s')">
+                        <label for="radio153" onmouseenter="showPath('Taller de asedio', 'b + w + s')">
                             Taller de asedio <span class="bold">s</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio154">
-                        <label for="radio154" onclick="showPath('Taller Mecánicos', 'b + w + t')">
+                        <label for="radio154" onmouseenter="showPath('Taller Mecánicos', 'b + w + t')">
                             Taller Mecánicos <span class="bold">t</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio155">
-                        <label for="radio155" onclick="showPath('Destileria', 'b + w + l')">
+                        <label for="radio155" onmouseenter="showPath('Destileria', 'b + w + l')">
                             Destileria <span class="bold">l</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio156">
-                        <label for="radio156" onclick="showPath('Agricultura', 'b + w + w')">
+                        <label for="radio156" onmouseenter="showPath('Agricultura', 'b + w + w')">
                             Agricultura <span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio157">
-                        <label for="radio157" onclick="showPath('Cocina', 'b + w + z')">
+                        <label for="radio157" onmouseenter="showPath('Cocina', 'b + w + z')">
                             Cocina <span class="bold">z</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio158">
-                        <label for="radio158" onclick="showPath('Pescaderia', 'b + w + h')">
+                        <label for="radio158" onmouseenter="showPath('Pescaderia', 'b + w + h')">
                             Pescaderia <span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio159">
-                        <label for="radio159" onclick="showPath('Cenicero', 'b + w + y')">
+                        <label for="radio159" onmouseenter="showPath('Cenicero', 'b + w + y')">
                             Cenicero <span class="bold">y</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio160">
-                        <label for="radio160" onclick="showPath('Tintoreria', 'b + w + d')">
+                        <label for="radio160" onmouseenter="showPath('Tintoreria', 'b + w + d')">
                             Tintoreria <span class="bold">d</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio161">
-                        <label for="radio161" onclick="showPath('Taller de jabón', 'b + w + S')">
+                        <label for="radio161" onmouseenter="showPath('Taller de jabón', 'b + w + S')">
                             Taller de jabón <span class="bold">S</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio162">
-                        <label for="radio162" onclick="showPath('Prensa', 'b + w + p')">
+                        <label for="radio162" onmouseenter="showPath('Prensa', 'b + w + p')">
                             Prensa <span class="bold">p</span>
                         </label>
                     </li>
@@ -1148,55 +1158,55 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio163">
-                        <label for="radio163" onclick="showPath('Pared', 'b + C + w')">
+                        <label for="radio163" onmouseenter="showPath('Pared', 'b + C + w')">
                             Pared <span class="bold">w</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio164">
-                        <label for="radio164" onclick="showPath('Piso', 'b + C + f')">
+                        <label for="radio164" onmouseenter="showPath('Piso', 'b + C + f')">
                             Piso <span class="bold">f</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio165">
-                        <label for="radio165" onclick="showPath('Rampa', 'b + C + r')">
+                        <label for="radio165" onmouseenter="showPath('Rampa', 'b + C + r')">
                             Rampa <span class="bold">r</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio166">
-                        <label for="radio166" onclick="showPath('Escaleras arriba', 'b + C + u')">
+                        <label for="radio166" onmouseenter="showPath('Escaleras arriba', 'b + C + u')">
                             Escaleras arriba <span class="bold">u</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio167">
-                        <label for="radio167" onclick="showPath('Escaleras abajo', 'b + C + d')">
+                        <label for="radio167" onmouseenter="showPath('Escaleras abajo', 'b + C + d')">
                             Escaleras abajo <span class="bold">d</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio168">
-                        <label for="radio168" onclick="showPath('Escaleras arriba/abajo', 'b + C + x')">
+                        <label for="radio168" onmouseenter="showPath('Escaleras arriba/abajo', 'b + C + x')">
                             Escaleras arriba/abajo <span class="bold">x</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio189">
-                        <label for="radio189" onclick="showPath('Fortificación', 'b + C + F')">
+                        <label for="radio189" onmouseenter="showPath('Fortificación', 'b + C + F')">
                             Fortificación <span class="bold">F</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio170">
-                        <label for="radio170" onclick="showPath('Via', 'b + C + T')">
+                        <label for="radio170" onmouseenter="showPath('Via', 'b + C + T')">
                             Via <span class="bold">T</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio171">
-                        <label for="radio171" onclick="showPath('Fin de via', 'b + C + S')">
+                        <label for="radio171" onmouseenter="showPath('Fin de via', 'b + C + S')">
                             Fin de via <span class="bold">S</span>
                         </label>
                     </li>
@@ -1214,25 +1224,25 @@
 
                     <li>
                         <input type="radio" name="radio" id="radio172">
-                        <label for="radio172" onclick="showPath('Zona de mucho trafico', 'b + o + h')">
+                        <label for="radio172" onmouseenter="showPath('Zona de mucho trafico', 'b + o + h')">
                             Zona de mucho trafico <span class="bold">h</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio173">
-                        <label for="radio173" onclick="showPath('Zona de trafico normal', 'b + o + n')">
+                        <label for="radio173" onmouseenter="showPath('Zona de trafico normal', 'b + o + n')">
                             Zona de trafico normal <span class="bold">n</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio174">
-                        <label for="radio174" onclick="showPath('Zona de poco trafico', 'b + o + l')">
+                        <label for="radio174" onmouseenter="showPath('Zona de poco trafico', 'b + o + l')">
                             Zona de poco trafico <span class="bold">l</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="radio" id="radio175">
-                        <label for="radio175" onclick="showPath('Zona de trafico restringido', 'b + o + r')">
+                        <label for="radio175" onmouseenter="showPath('Zona de trafico restringido', 'b + o + r')">
                             Zona de trafico restringido <span class="bold">r</span>
                         </label>
                     </li>

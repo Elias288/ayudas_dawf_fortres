@@ -22,7 +22,7 @@ onresize = (evt) => {
     const windowWidth = window.innerWidth;
 
     if (windowWidth >= 1000)
-        document.getElementById("sideNav").style.width = "250px"
+        document.getElementById("sideNav").style.width = "260px"
     else {
         document.getElementById("sideNav").style.width = "0"
         isNavOpen = false;
