@@ -40,6 +40,7 @@ section {
                 width: 100%;
                 text-align: start;
                 font-weight: 400;
+                border-bottom: 1px solid #cccccc;
 
                 &:last-of-type {
                     text-align: end;
