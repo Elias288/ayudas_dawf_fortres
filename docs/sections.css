@@ -1,0 +1,63 @@
+section {
+    padding-top: calc(var(--header-height) + 10px);
+
+    >* {
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 auto 1rem;
+        max-width: 500px;
+        padding: 15px;
+
+        table {
+            width: 100%;
+
+            tbody tr {
+                cursor: pointer;
+                height: 1.8rem;
+
+                &.selected,
+                &.selected a {
+                    background-color: #000;
+                    color: #fff;
+                }
+
+                &:hover,
+                &:hover a {
+                    background-color: #000;
+                    color: #fff;
+                }
+
+                span,
+                a {
+                    display: block;
+                }
+            }
+
+            td,
+            th {
+                padding: 0 .5rem;
+                width: 100%;
+                text-align: start;
+                font-weight: 400;
+
+                &:last-of-type {
+                    text-align: end;
+                    min-width: fit-content;
+                }
+
+                label {
+                    width: 100%;
+                    display: block;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        padding-top: calc(var(--header-pc-height) + 10px);
+    }
+}

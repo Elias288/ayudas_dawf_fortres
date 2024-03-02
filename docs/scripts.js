@@ -46,3 +46,20 @@ const disablePath = () => {
     showPathDiv.querySelector('.command').innerText = ""
     showPathDiv.querySelector('.keys').innerText = ""
 }
+
+function selectedRow() {
+
+    var filas = document.querySelectorAll('table tr')
+
+    filas.forEach(fila => {
+        fila.addEventListener('click', function () {
+            // Remover la clase de todas las filas
+            filas.forEach(function (fila) {
+                fila.classList.remove('selected');
+            });
+
+            // Agregar la clase a la fila clickeada
+            fila.classList.add('selected');
+        });
+    })
+}

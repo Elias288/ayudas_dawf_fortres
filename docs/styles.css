@@ -1,3 +1,6 @@
+@import 'header.css';
+@import 'sections.css';
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', monospace;
@@ -6,6 +9,7 @@
     --header-height: 140px;
     --header-pc-height: 60px;
     --sideNav-width: 260px;
+    --footer-height: 150px;
 }
 
 body {
@@ -25,73 +29,8 @@ a:visited {
     color: #000;
 }
 
-
-
-section {
-    padding-top: calc(var(--header-height) + 10px);
-
-    >article {
-        border-radius: 10px;
-        border: 1px solid black;
-        background-color: #fff;
-        margin: 0 auto 1rem;
-        max-width: 500px;
-        padding: 15px;
-
-        ul {
-            list-style: none;
-            padding: 0;
-
-            li {
-                width: 100%;
-                border-bottom: .5px solid rgb(201, 201, 201);
-                margin-bottom: 5px;
-
-                input[type='radio'] {
-                    display: none;
-
-                    &:checked+label,
-                    &:checked+label a {
-                        background-color: #000;
-                        color: #fff;
-                    }
-                }
-
-                &:not(:first-of-type):hover,
-                &:hover a {
-                    background-color: #000;
-                    color: #fff;
-                    cursor: pointer;
-                }
-
-                >* {
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 0 5px;
-                    cursor: pointer;
-
-
-                    > :not(span) {
-                        flex: 1;
-                    }
-                }
-            }
-
-            .first {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-    }
-
-
-}
-
-nav ul,
-section>div>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+main {
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
 }
 
 .showPath {
@@ -135,6 +74,7 @@ section>div>ul {
 }
 
 footer {
+    height: var(--footer-height);
     margin-top: var(--header-height);
     background-color: #fff;
     padding: 1rem;
@@ -162,10 +102,6 @@ footer {
 
 /* PC */
 @media screen and (min-width: 1000px) {
-
-    section {
-        padding-top: calc(var(--header-pc-height) + 10px);
-    }
 
     .showPath {
         bottom: 0;
