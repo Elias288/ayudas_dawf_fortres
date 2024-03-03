@@ -1,4 +1,4 @@
-import data from './data.json' assert { type: 'json' };
+import data from '../data.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
     const main = document.querySelector('main');

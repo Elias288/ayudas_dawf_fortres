@@ -11,13 +11,12 @@ header {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
     h1 {
         margin: 0;
         text-wrap: wrap;
-        max-width: 80%;
+        flex: 1;
     }
 
     label {
@@ -83,7 +82,7 @@ header {
     }
 
     #MenuToggle {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
         font-weight: bold;
         display: block;
         cursor: pointer;
