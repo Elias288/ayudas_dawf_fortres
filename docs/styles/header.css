@@ -113,7 +113,7 @@ header {
             display: block;
             top: var(--header-pc-height);
             height: calc(100vh - var(--header-pc-height));
-            width: 260px;
+            width: var(--sideNav-width);
             overflow: visible;
 
             ul li {

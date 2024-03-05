@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     data.forEach(sectionData => {
         const section = this.createElement('section')
         section.id = sectionData.name.replace(/[\/\s]/g, '')
-        section.innerHTML += `<div>
+        section.innerHTML += `
+        <div>
             <h2><span class="code">${sectionData.key}</span> ${sectionData.name}</h2>
             <table>
                 <thead>
@@ -17,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </thead>
                 <tbody></tbody>
             </table>
-        </div>`
+        </div>
+        `
 
         const tbody = section.querySelector('tbody');
 
