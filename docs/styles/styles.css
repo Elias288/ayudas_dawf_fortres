@@ -1,6 +1,6 @@
 @import 'header.css';
 @import 'sections.css';
-@import '/docs/pages/guias/guias.css';
+@import 'guias.css';
 
 * {
     box-sizing: border-box;

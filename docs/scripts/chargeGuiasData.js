@@ -1,4 +1,4 @@
-import guias from '/docs/pages/guias/data.json' assert { type: 'json' };
+import guias from '../data/guias.json' assert { type: 'json' };
 
 document.addEventListener('DOMContentLoaded', function () {
     const main = document.querySelector('main');

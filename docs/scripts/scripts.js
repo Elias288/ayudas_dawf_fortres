@@ -85,7 +85,7 @@ const toCamelCase = (text) => {
 }
 
 // Carga el sidenav en la pagina html
-fetch('/docs/sideNav/sideNav.html')
+fetch('sideNav/sideNav.html')
     .then(res => res.text())
     .then(sideNav => {
         // document.getElementById('sideNav').innerHTML = sideNav

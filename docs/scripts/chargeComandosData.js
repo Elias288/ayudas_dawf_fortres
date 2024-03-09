@@ -1,13 +1,13 @@
-import data from '/docs/pages/comandos/data.json' assert { type: 'json' };
+import data from '../data/comandos.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
     const main = document.querySelector('main');
 
     data.forEach(sectionData => {
-        const section = this.createElement('section')
-        section.id = toCamelCase(sectionData.name
+        const section = this.createElement('section'), camelId = toCamelCase(sectionData.name
             .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // quita los acentos
         )
+        section.id = camelId
 
         section.innerHTML = `
         <article>
@@ -30,9 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
             var newRow = tbody.insertRow();
             var cell1 = newRow.insertCell(0);
             var cell2 = newRow.insertCell(1);
+            const camelCommand = toCamelCase(obj.command.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            )
 
             if (obj.type === "link") {
-                cell1.innerHTML = `<a href="#${obj.command.replace(/[\/\s]/g, '')}" onclick="disablePath()">${obj.command}</a>`;
+                cell1.innerHTML = `<a href="#${camelCommand}" onclick="disablePath()">${obj.command}</a>`;
             } else {
                 cell1.innerHTML = `<span>${obj.command}</span>`;
             }
