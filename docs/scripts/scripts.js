@@ -1,30 +1,37 @@
 let isNavOpen = false;
 
 const disableMenu = () => {
-    const windowWidth = window.innerWidth;
-    if (windowWidth <= 1000) {
-        document.getElementById("sideNav").style.width = "0"
+    const windowWidth = window.innerWidth,
+        sideNav = document.getElementById("sideNav");
+
+    if (sideNav && windowWidth <= 1000) {
+        sideNav.style.width = "0"
         isNavOpen = false;
     }
 };
 
 const toggleSideNav = () => {
+    const sideNav = document.getElementById("sideNav")
+    if (!sideNav) return
+
     if (isNavOpen) {
-        document.getElementById("sideNav").style.width = "0"
+        sideNav.style.width = "0"
         isNavOpen = false;
     } else {
-        document.getElementById("sideNav").style.width = "100%"
+        sideNav.style.width = "100%"
         isNavOpen = true
     }
 };
 
 onresize = (evt) => {
-    const windowWidth = window.innerWidth;
+    const windowWidth = window.innerWidth,
+        sideNav = document.getElementById("sideNav");
+    if (!sideNav) return
 
     if (windowWidth >= 1000)
-        document.getElementById("sideNav").style.width = "295px"
+        sideNav.style.width = "295px"
     else {
-        document.getElementById("sideNav").style.width = "0"
+        sideNav.style.width = "0"
         isNavOpen = false;
     }
 }
@@ -63,3 +70,14 @@ function selectedRow() {
         });
     })
 }
+
+// Carga el sidenav en la pagina html
+fetch('/docs/sideNav/sideNav.html')
+    .then(res => res.text())
+    .then(sideNav => {
+        // document.getElementById('sideNav').innerHTML = sideNav
+        const header = document.querySelector('header')
+
+        if (header) header.innerHTML += sideNav
+    })
+
