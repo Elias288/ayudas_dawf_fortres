@@ -56,9 +56,10 @@ const disablePath = () => {
 
 function selectedRow() {
 
-    var filas = document.querySelectorAll('table tr')
+    var filas = document.querySelectorAll('table tbody tr')
 
     filas.forEach(fila => {
+
         fila.addEventListener('click', function () {
             // Remover la clase de todas las filas
             filas.forEach(function (fila) {
@@ -67,8 +68,20 @@ function selectedRow() {
 
             // Agregar la clase a la fila clickeada
             fila.classList.add('selected');
+
+            const command = fila.firstChild.innerText,
+                key = fila.querySelector('input[type="hidden"]').value
+
+            showPath(command, key)
         });
     })
+}
+
+const toCamelCase = (text) => {
+    return text.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+        return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    })
+        .replace(/\s+/g, '')
 }
 
 // Carga el sidenav en la pagina html

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     section.innerHTML += `
     <div>
         <h2>${data.name}</h2>
-        <table>
+        <table id="menu">
             <thead>
                 <tr>
                     <th class="bold">Acción</th>

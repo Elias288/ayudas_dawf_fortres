@@ -64,13 +64,14 @@ main {
     font-weight: bold;
 }
 
-.code {
+code {
     background-color: #dadada;
-    padding: 3px 10px;
+    padding: 3px;
+    margin-inline: 3px;
     border-radius: 5px;
     font-family: monospace;
-    height: fit-content;
-    min-width: fit-content;
+    font-size: 1rem;
+    text-wrap: nowrap;
 }
 
 footer {

@@ -125,15 +125,10 @@ header {
                 }
             }
 
-            .dropdown {
-                .dropdown-content {
-                    display: block;
-
-                    a {
-                        padding-left: 1.7rem;
-                    }
-                }
+            .dropdown .dropdown-content a {
+                padding-left: 1.7rem;
             }
+
         }
 
         #MenuToggle {

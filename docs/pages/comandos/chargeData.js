@@ -1,15 +1,18 @@
-import data from '../data.json' assert { type: 'json' };
+import data from '/docs/pages/comandos/data.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
     const main = document.querySelector('main');
 
     data.forEach(sectionData => {
         const section = this.createElement('section')
-        section.id = sectionData.name.replace(/[\/\s]/g, '')
-        section.innerHTML += `
-        <div>
-            <h2><span class="code">${sectionData.key}</span> ${sectionData.name}</h2>
-            <table>
+        section.id = toCamelCase(sectionData.name
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // quita los acentos
+        )
+
+        section.innerHTML = `
+        <article>
+            <h2><code>${sectionData.key}</code> ${sectionData.name}</h2>
+            <table id="menu">
                 <thead>
                     <tr>
                         <th class="bold">Acción</th>
@@ -18,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </thead>
                 <tbody></tbody>
             </table>
-        </div>
+        </article>
         `
 
         const tbody = section.querySelector('tbody');
@@ -27,15 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
             var newRow = tbody.insertRow();
             var cell1 = newRow.insertCell(0);
             var cell2 = newRow.insertCell(1);
-            newRow.onmouseenter = () => showPath(obj.command, obj.path)
 
             if (obj.type === "link") {
                 cell1.innerHTML = `<a href="#${obj.command.replace(/[\/\s]/g, '')}" onclick="disablePath()">${obj.command}</a>`;
             } else {
-                cell1.innerHTML = `<span >${obj.command}</span>`;
+                cell1.innerHTML = `<span>${obj.command}</span>`;
             }
 
-            cell2.innerHTML = `<span class="bold">${obj.key}</span><input type="hidden" name="path" value="${obj.path}">`;
+            cell2.innerHTML = `<code>${obj.key}</code><input type="hidden" name="path" value="${obj.path}">`;
         })
 
         main.appendChild(section)
