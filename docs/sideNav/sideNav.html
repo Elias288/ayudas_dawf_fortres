@@ -4,7 +4,7 @@
 <nav id="sideNav">
     <ul>
         <div class="dropdown">
-            <li class="dropbtn"><a href="#">Comandos <i class="fa fa-caret-down"></i></a></li>
+            <li class="dropbtn"><a>Comandos <i class="fa fa-caret-down"></i></a></li>
             <ul class="dropdown-content">
                 <li onclick="disableMenu()"><a href="/docs/index.html#menu">Menú</a></li>
                 <li onclick="disableMenu()"><a href="/docs/index.html#construir">Construir</a></li>
@@ -25,6 +25,19 @@
         </div>
 
         <li onclick="disableMenu()"><a href="/docs/pages/stonesense/stonesense.html">Comandos de Stonesense</a></li>
-        <li onclick="disableMenu()"><a href="/docs/guias.html">Guías</a></li>
+        <div class="dropdown">
+            <li><a>Guías <i class="fa fa-caret-down"></i></a></li>
+
+            <ul class="dropdown-content">
+                <li onclick="disableMenu()"><a href="/docs/pages/guias/guias.html#opcionesDelJuego">Opciones del
+                        juego</a></li>
+                <li onclick="disableMenu()"><a href="/docs/pages/guias/guias.html#hubicacionDelMapa">Hubicacion del
+                        mapa</a></li>
+                <li onclick="disableMenu()"><a href="/docs/pages/guias/guias.html#movimientoYMenu">Movimiento y Menu</a>
+                </li>
+                <li onclick="disableMenu()"><a href="/docs/pages/guias/guias.html#primerasAcciones">Primeras
+                        Acciones</a></li>
+            </ul>
+        </div>
     </ul>
 </nav>
