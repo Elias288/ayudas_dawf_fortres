@@ -36,7 +36,7 @@ main {
     overflow: auto;
 }
 
-.content {
+#content {
     padding-bottom: 1rem;
     min-height: 100%;
 }
@@ -73,12 +73,17 @@ main {
 }
 
 code {
-    background-color: #dadada;
+    background-color: #ececec;
     padding: 3px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-family: monospace;
     font-size: 1rem;
     text-wrap: nowrap;
+    margin-block: 2px;
+    display: inline-block;
+    outline: 1px solid #8f8f8f;
+    box-shadow: 2px 1px 10px #9b9b9b;
+    height: min-content;
 }
 
 footer {

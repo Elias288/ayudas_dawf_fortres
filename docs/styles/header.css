@@ -77,6 +77,10 @@ header {
             }
         }
 
+        .fa-caret-left {
+            display: none;
+        }
+
         >a,
         >a:visited {
             color: #fff;
@@ -131,6 +135,14 @@ header {
                     top: 0;
                     right: 295px;
                 }
+            }
+
+            .fa-caret-left {
+                display: inline-block;
+            }
+
+            .fa-caret-down {
+                display: none;
             }
         }
 

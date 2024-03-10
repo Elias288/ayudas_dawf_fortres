@@ -1,7 +1,7 @@
 import data from '../data/comandos.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
-    const content = document.querySelector('.content');
+    const content = document.getElementById('content');
 
     data.forEach(sectionData => {
         const article = this.createElement('article'), camelId = toCamelCase(sectionData.name

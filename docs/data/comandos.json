@@ -76,7 +76,7 @@
                 "type": "link"
             },
             {
-                "command": "Reservas",
+                "command": "Almacenes",
                 "key": "p",
                 "path": "p",
                 "type": "link"
@@ -768,7 +768,7 @@
         ]
     },
     {
-        "name": "Reservas",
+        "name": "Almacenes",
         "key": "p",
         "data": [
             {
@@ -826,18 +826,6 @@
                 "type": "text"
             },
             {
-                "command": "Reservas personalizadas",
-                "key": "c",
-                "path": "p + c",
-                "type": "text"
-            },
-            {
-                "command": "Seleccion personalizada",
-                "key": "t",
-                "path": "p + t",
-                "type": "text"
-            },
-            {
                 "command": "Comida",
                 "key": "f",
                 "path": "p + f",
@@ -883,6 +871,18 @@
                 "command": "Armadura",
                 "key": "d",
                 "path": "p + d",
+                "type": "text"
+            },
+            {
+                "command": "Almacen personalizado",
+                "key": "c",
+                "path": "p + c",
+                "type": "text"
+            },
+            {
+                "command": "Configuración de almacen personalizado",
+                "key": "t",
+                "path": "p + t",
                 "type": "text"
             },
             {

@@ -22,12 +22,6 @@ article {
                     color: #fff;
                 }
 
-                &:hover,
-                &:hover a {
-                    background-color: #8b8b8b;
-                    color: #fff;
-                }
-
                 &:hover code,
                 &.selected code {
                     color: #000;
@@ -74,5 +68,14 @@ article {
 @media screen and (min-width: 800px) {
     article {
         width: calc(100% - var(--sideNav-width));
+
+        >* table#menu tbody tr {
+
+            &:hover,
+            &:hover a {
+                background-color: #8b8b8b;
+                color: #fff;
+            }
+        }
     }
 }

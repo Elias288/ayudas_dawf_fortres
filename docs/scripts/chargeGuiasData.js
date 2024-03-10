@@ -1,7 +1,7 @@
 import guias from '../data/guias.json' assert { type: 'json' };
 
 document.addEventListener('DOMContentLoaded', function () {
-    const content = document.querySelector('.content');
+    const content = document.getElementById('content');
 
     guias.forEach(data => {
         const article = this.createElement('article')
@@ -9,12 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         article.id = toCamelCase(data.name
             .normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
 
-        article.innerHTML += `
-            <div>
-                <h2>${data.name}</h2>
-                ${data.content}
-            </div>
-        `
+        article.innerHTML += `<div>${data.content}</div>`
 
         content.appendChild(article)
     })

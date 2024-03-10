@@ -1,7 +1,7 @@
 import data from '../data/stonesense.json' assert {type: 'json'}
 
 document.addEventListener('DOMContentLoaded', function () {
-    const content = document.querySelector('.content');
+    const content = document.getElementById('content');
 
     const article = this.createElement('article')
     article.innerHTML += `
