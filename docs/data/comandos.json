@@ -322,7 +322,7 @@
                 "type": "text"
             },
             {
-                "command": "granja",
+                "command": "Granja",
                 "key": "p",
                 "path": "b + p",
                 "type": "text"
