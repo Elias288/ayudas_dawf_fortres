@@ -1,22 +1,21 @@
 import guias from '../data/guias.json' assert { type: 'json' };
 
 document.addEventListener('DOMContentLoaded', function () {
-    const main = document.querySelector('main');
+    const content = document.querySelector('.content');
 
     guias.forEach(data => {
-        const section = this.createElement('section')
-        section.classList.add('text')
-        section.id = toCamelCase(data.name
+        const article = this.createElement('article')
+        article.classList.add('text')
+        article.id = toCamelCase(data.name
             .normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
 
-        section.innerHTML += `
-            <article>
+        article.innerHTML += `
+            <div>
                 <h2>${data.name}</h2>
                 ${data.content}
-            </article>
+            </div>
         `
 
-        main.appendChild(section)
-
+        content.appendChild(article)
     })
 })

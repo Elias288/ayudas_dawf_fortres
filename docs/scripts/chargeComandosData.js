@@ -1,16 +1,16 @@
 import data from '../data/comandos.json' assert { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
-    const main = document.querySelector('main');
+    const content = document.querySelector('.content');
 
     data.forEach(sectionData => {
-        const section = this.createElement('section'), camelId = toCamelCase(sectionData.name
+        const article = this.createElement('article'), camelId = toCamelCase(sectionData.name
             .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // quita los acentos
         )
-        section.id = camelId
+        article.id = camelId
 
-        section.innerHTML = `
-        <article>
+        article.innerHTML = `
+        <div>
             <h2><code>${sectionData.key}</code> ${sectionData.name}</h2>
             <table id="menu">
                 <thead>
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 </thead>
                 <tbody></tbody>
             </table>
-        </article>
+        </div>
         `
 
-        const tbody = section.querySelector('tbody');
+        const tbody = article.querySelector('tbody');
 
         sectionData.data.forEach(obj => {
             var newRow = tbody.insertRow();
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cell2.innerHTML = `<code>${obj.key}</code><input type="hidden" name="path" value="${obj.path}">`;
         })
 
-        main.appendChild(section)
+        content.appendChild(article)
     })
 
     selectedRow();

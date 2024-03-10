@@ -1,10 +1,10 @@
 import data from '../data/stonesense.json' assert {type: 'json'}
 
 document.addEventListener('DOMContentLoaded', function () {
-    const main = document.querySelector('main');
+    const content = document.querySelector('.content');
 
-    const section = this.createElement('section')
-    section.innerHTML += `
+    const article = this.createElement('article')
+    article.innerHTML += `
     <div>
         <h2>${data.name}</h2>
         <table id="menu">
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
     `
 
-    const tbody = section.querySelector('tbody')
+    const tbody = article.querySelector('tbody')
     data.data.forEach(obj => {
         var newRow = tbody.insertRow();
         var cell1 = newRow.insertCell(0);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cell2.innerHTML = `<span class="bold">${obj.key}</span><input type="hidden" name="path" value="${obj.path}">`;
     })
 
-    main.appendChild(section)
+    content.appendChild(article)
 
     selectedRow();
 })

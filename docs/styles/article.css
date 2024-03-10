@@ -1,18 +1,13 @@
-section {
-
-    &,
-    .navigable:not(:first-of-type) {
-        padding-top: calc(var(--header-height) + 10px);
-    }
-
+article {
+    margin-top: 1rem;
 
     >* {
         background-color: #fff;
         border-radius: 10px;
         border: 1px solid black;
-        margin: 0 auto 1rem;
         max-width: 500px;
         padding: 15px;
+        margin-inline: auto;
 
         table#menu {
             width: 100%;
@@ -73,12 +68,7 @@ section {
 
 
 @media screen and (min-width: 1000px) {
-    section {
+    article {
         width: calc(100% - var(--sideNav-width));
-
-        &,
-        .navigable:not(:first-of-type) {
-            padding-top: calc(var(--header-pc-height) + 10px);
-        }
     }
 }
