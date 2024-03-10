@@ -1,7 +1,7 @@
 [
     {
         "name": "Opciones del juego",
-        "content": "<h2>Opciones del juego</h2><p>Usando Lazy Newb Pack las opciónes recomendadas:<table><thead><tr><th>Característica<th>Activado<tbody><tr><td>Acuiferos<td>No<tr><td>Intro<td>No<tr><td>Sonido<td>No</table><br><table><thead><tr><th>Caracteristica<th>Cantidad<tbody><tr><td>Cantidad de población<td>80<tr><td>Población estricta<td>120<tr><td>Visitantes<td>30</table>"
+        "content": "<h2>Opciones del juego</h2><p>Usando Lazy Newb Pack las opciónes recomendadas:<table><thead><tr><th>Características<th>Activado<tbody><tr><td>Acuiferos<td>No<tr><td>Intro<td>No<tr><td>Sonido<td>No</table><br><table><thead><tr><th>Características<th>Cantidad<tbody><tr><td>Cantidad de población<td>80<tr><td>Población estricta<td>120<tr><td>Visitantes<td>30</table>"
     },
     {
         "name": "Ubicación del mapa",
