@@ -108,7 +108,7 @@ footer {
 }
 
 /* PC */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     main {
         height: calc(100vh - var(--header-pc-height));
     }

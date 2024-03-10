@@ -1,10 +1,11 @@
 let isNavOpen = false;
+const pcSize = 800;
 
 const disableMenu = () => {
     const windowWidth = window.innerWidth,
         sideNav = document.getElementById("sideNav");
 
-    if (sideNav && windowWidth <= 1000) {
+    if (sideNav && windowWidth <= pcSize) {
         sideNav.style.width = "0"
         isNavOpen = false;
     }
@@ -28,7 +29,7 @@ onresize = (evt) => {
         sideNav = document.getElementById("sideNav");
     if (!sideNav) return
 
-    if (windowWidth >= 1000)
+    if (windowWidth >= pcSize)
         sideNav.style.width = "295px"
     else {
         sideNav.style.width = "0"

@@ -2,45 +2,33 @@
 <input type="checkbox" name="showMenu" id="showMenu">
 
 <nav id="sideNav">
-    <ul>
-        <div class="dropdown">
-            <li class="dropbtn"><a>Comandos <i class="fa fa-caret-down"></i></a></li>
-            <ul class="dropdown-content">
-                <li onclick="disableMenu()"><a href="index.html#menu">Menú</a></li>
-                <li onclick="disableMenu()"><a href="index.html#construir">Construir</a></li>
-                <li onclick="disableMenu()"><a href="index.html#informacionSobreElMundo">Información del
-                        mundo</a>
-                </li>
-                <li onclick="disableMenu()"><a href="index.html#designaciones">Designaciones</a></li>
-                <li onclick="disableMenu()"><a href="index.html#zonas">Zonas</a></li>
-                <li onclick="disableMenu()"><a href="index.html#encargos">Encargos</a></li>
-                <li onclick="disableMenu()"><a href="index.html#reservas">Reservas</a></li>
-                <li onclick="disableMenu()"><a href="index.html#talleres">Talleres</a></li>
-                <li onclick="disableMenu()"><a href="index.html#pared/Suelo/Escalera/Via">Pared/Suelo/Escalera/Via</a>
-                </li>
-                <li onclick="disableMenu()"><a href="index.html#establecerZonasDeTrafico">Establecer zonas
-                        de
-                        tráfico</a></li>
-            </ul>
+
+    <div class="dropdown">
+        <button>Comandos Dwarf Fortress <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a onclick="disableMenu()" href="index.html#menu">Menu</a>
+            <a onclick="disableMenu()" href="index.html#construir">Construir</a>
+            <a onclick="disableMenu()" href="index.html#informacionSobreElMundo">Información del mundo</a>
+            <a onclick="disableMenu()" href="index.html#designaciones">Designaciones</a>
+            <a onclick="disableMenu()" href="index.html#zonas">Zonas</a>
+            <a onclick="disableMenu()" href="index.html#encargos">Encargos</a>
+            <a onclick="disableMenu()" href="index.html#reservas">Reservas</a>
+            <a onclick="disableMenu()" href="index.html#talleres">Talleres</a>
+            <a onclick="disableMenu()" href="index.html#pared/Suelo/Escalera/Via">Pared/Suelo/Escalera/Via</a>
+            <a onclick="disableMenu()" href="index.html#establecerZonasDeTrafico">Establecer zonas de tráfico</a>
         </div>
+    </div>
 
-        <li onclick="disableMenu()"><a href="stonesense.html">Comandos de Stonesense</a></li>
+    <a href="stonesense.html" onclick="disableMenu()">Comandos de Stonesense</a>
 
-        <div class="dropdown">
-            <li><a>Guías <i class="fa fa-caret-down"></i></a></li>
-
-            <ul class="dropdown-content">
-                <li onclick="disableMenu()"><a href="guias.html#opcionesDelJuego">Opciones del
-                        juego</a></li>
-                <li onclick="disableMenu()"><a href="guias.html#hubicacionDelMapa">Hubicacion del
-                        mapa</a></li>
-                <li onclick="disableMenu()"><a href="guias.html#movimientoYMenu">Movimiento y Menu</a>
-                </li>
-                <li onclick="disableMenu()"><a href="guias.html#primerasAcciones">Primeras
-                        Acciones</a></li>
-                <li onclick="disableMenu()"><a href="guias.html#comida">
-                    Comida</a></li>
-            </ul>
+    <div class="dropdown">
+        <button>Guias <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a onclick="disableMenu()" href="guias.html#opcionesDelJuego">Opciones del juego</a>
+            <a onclick="disableMenu()" href="guias.html#hubicacionDelMapa">Hubicacion del mapa</a>
+            <a onclick="disableMenu()" href="guias.html#movimientoYMenu">Movimiento y Menu</a>
+            <a onclick="disableMenu()" href="guias.html#primerasAcciones">Primeras Acciones</a>
+            <a onclick="disableMenu()" href="guias.html#comida">Comida</a>
         </div>
-    </ul>
+    </div>
 </nav>
