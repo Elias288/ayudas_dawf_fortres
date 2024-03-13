@@ -9,7 +9,6 @@ const chargeSideNav = () => {
     return fetch('sideNav/sideNav.html')
         .then(res => res.text())
         .then(sideNav => {
-            // document.getElementById('sideNav').innerHTML = sideNav
             const header = document.querySelector('header')
 
             if (header) header.innerHTML += sideNav

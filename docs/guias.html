@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayudas Dwarf Fortress</title>
+    <link rel="icon" href="assets/Dwarf_Fortress_Icon.svg">
+
     <link rel="stylesheet" href="styles/styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,10 +19,14 @@
 
 <body>
     <header>
-        <h1>Ayudas Dwarf Fortress Clasico - Guías</h1>
+        <img src="assets/Dwarf_Fortress_Icon.svg" alt="Dwarf fortress logo">
+        <h1>Ayudas Dwarf Fortress Clásico</h1>
+        <span class="subtitle bold">Guías</span>
+
+        <span class="noTextSelection cursorPointer" id="menuToggle">&#9776;</span>
     </header>
 
-    <main id="Guias">
+    <main id="guias">
         <div id="content">
             <article class="text" id="opcionesDelJuego">
                 <div>
@@ -134,7 +141,7 @@
 
                     <p>
                         Con el <code>Tab</code> podremos intercambiar la visualización del costado, mostrando un mapa,
-                        las <a href="index.html#Menu">opciones del menú</a> o ambas.
+                        las <a href="index.html#menu">opciones del menú</a> o ambas.
                     </p>
 
                     <details class="menu" open>
@@ -1760,22 +1767,8 @@
 
         </div>
 
-        <footer>
-            <address>
-                <a href="https://www.linkedin.com/in/elias-bianchi-3a5012183/" target="_blank"
-                    rel="noopener noreferrer"><img src="assets/linkedin-svgrepo-com.svg" alt="Linkedin Logo">
-                    Linkedin</a>
-                <a href="https://github.com/Elias288" target="_blank" rel="noopener noreferrer"><img
-                        src="assets/github-142-svgrepo-com.svg" alt="Github Logo"> Github</a>
-                <a href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Main_Page?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                    target="_blank" rel="noopener noreferrer"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Dwarf_Fortress_Icon.svg"
-                        alt="Dwarf Fortress logo">Dwarf fortress wiki</a>
-            </address>
-
-            <p>No Copyrights</p>
-        </footer>
     </main>
+
     <script type="module" src="scripts/scripts.js"></script>
 </body>
 

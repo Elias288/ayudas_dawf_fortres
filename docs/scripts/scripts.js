@@ -3,13 +3,16 @@ import {
     setDisableMenuFunction,
     toggleSideNav,
     onResizeFunction
-} from '../sideNav/chargeSideNav.js'
+} from '../sideNav/SideNav.js'
+import { chargeFooter } from '../footer/chargeFooter.js'
 
 document.addEventListener("DOMContentLoaded", async function () {
     await chargeSideNav()
 
     setDisableMenuFunction()
-    document.getElementById('MenuToggle').addEventListener('click', toggleSideNav)
+    document.getElementById('menuToggle').addEventListener('click', toggleSideNav)
+
+    await chargeFooter();
 
 })
 
