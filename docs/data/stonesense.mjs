@@ -1,4 +1,4 @@
-{
+const stonesenseData = {
     "name": "Controles",
     "data": [
         {
@@ -99,3 +99,5 @@
         }
     ]
 }
+
+export default stonesenseData

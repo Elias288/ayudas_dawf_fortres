@@ -1,10 +1,10 @@
-import data from '../data/comandos.json' assert { type: 'json' };
+import comandosData from '../data/comandos.mjs';
 import { toCamelCase, selectedRow } from './generalFunctons.js'
 
 document.addEventListener("DOMContentLoaded", function () {
     const content = document.getElementById('content');
 
-    data.forEach(sectionData => {
+    comandosData.forEach(sectionData => {
         const article = this.createElement('article'), // Crea elemento article
             camelId = toCamelCase(sectionData.name
                 .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // quita los acentos

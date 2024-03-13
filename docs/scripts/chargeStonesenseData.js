@@ -1,4 +1,4 @@
-import data from '../data/stonesense.json' assert {type: 'json'}
+import stonesenseData from '../data/stonesense.mjs';
 import { selectedRow, showPath } from './generalFunctons.js'
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const article = this.createElement('article')
     article.innerHTML += `
     <div>
-        <h2>${data.name}</h2>
+        <h2>${stonesenseData.name}</h2>
         <table id="menu">
             <thead>
                 <tr>
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     `
 
     const tbody = article.querySelector('tbody')
-    data.data.forEach(obj => {
+    stonesenseData.data.forEach(obj => {
         var newRow = tbody.insertRow();
         var cell1 = newRow.insertCell(0);
         var cell2 = newRow.insertCell(1);

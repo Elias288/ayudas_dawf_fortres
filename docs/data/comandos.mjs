@@ -1,4 +1,4 @@
-[
+const comandosData = [
     {
         "name": "Menu",
         "key": "Esc",
@@ -1127,4 +1127,6 @@
             }
         ]
     }
-]
+];
+
+export default comandosData
