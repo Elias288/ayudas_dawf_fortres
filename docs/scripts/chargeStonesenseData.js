@@ -1,4 +1,5 @@
 import data from '../data/stonesense.json' assert {type: 'json'}
+import { selectedRow, showPath } from './generalFunctons.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const content = document.getElementById('content');
@@ -32,6 +33,5 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     content.appendChild(article)
-
-    selectedRow();
+    selectedRow(content.querySelectorAll('table tbody tr'));
 })
