@@ -72,6 +72,36 @@ main {
     font-weight: bold;
 }
 
+.sangria {
+    margin-left: .5rem;
+    padding-left: .5rem;
+
+    &.line {
+        border-inline-start: 1px solid #000;
+    }
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.noTextSelection {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+details {
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+
+    margin-bottom: 1rem;
+}
+
 code {
     background-color: #ececec;
     padding: 3px;

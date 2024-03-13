@@ -184,7 +184,7 @@
                 "type": "text"
             },
             {
-                "command": "Tumba",
+                "command": "Ataúd",
                 "key": "n",
                 "path": "b + n",
                 "type": "text"
@@ -346,7 +346,7 @@
                 "type": "link"
             },
             {
-                "command": "Depósito comercial",
+                "command": "Almacén comercial",
                 "key": "D",
                 "path": "b + D",
                 "type": "text"
@@ -768,7 +768,7 @@
         ]
     },
     {
-        "name": "Almacenes",
+        "name": "Depósitos",
         "key": "p",
         "data": [
             {
@@ -874,13 +874,13 @@
                 "type": "text"
             },
             {
-                "command": "Almacen personalizado",
+                "command": "Depósito personalizado",
                 "key": "c",
                 "path": "p + c",
                 "type": "text"
             },
             {
-                "command": "Configuración de almacen personalizado",
+                "command": "Configuración de depósito personalizado",
                 "key": "t",
                 "path": "p + t",
                 "type": "text"
