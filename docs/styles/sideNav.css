@@ -62,7 +62,10 @@
         color: #fff;
         text-decoration: none;
         text-align: center;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 }
 

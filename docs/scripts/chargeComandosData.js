@@ -12,42 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
         article.id = camelId // setea el id al article
 
         article.innerHTML = `
-        <div>
-            <h2><code>${sectionData.key}</code> ${sectionData.name}</h2>
-            <table id="menu">
-                <thead>
-                    <tr>
-                        <th class="bold">Acción</th>
-                        <th class="bold">Comando</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+            <div>
+                <h2><code>${sectionData.key}</code> ${sectionData.name}</h2>
+                <div id="menu">
+                    <div class="row listHeader">
+                        <span class="bold comando">Acción</span>
+                        <span class="bold">Comando</span>
+                    </div>
+                </div>
+            </div>
         ` // estructura del article
 
-        const tbody = article.querySelector('tbody'); // tbody del article
-
-        sectionData.data.forEach(obj => {
-            var newRow = tbody.insertRow(); // inserta una nueva fila al tbody
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-
-
-            if (obj.type === "link") { // si el tipo del objeto es un link
-                const camelCommand = toCamelCase(obj.command
-                    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-                )
-                cell1.innerHTML = `<a href="#${camelCommand}">${obj.command}</a>`;
-            } else { // si el tipo del objeto es un texto
-                cell1.innerHTML = `<span>${obj.command}</span>`;
-            }
-
-            cell2.innerHTML = `<code>${obj.key}</code><input type="hidden" name="path" value="${obj.path}">`;
+        const menu = article.querySelector('#menu')
+        sectionData.data.forEach((obj) => {
+            const camelCommand = toCamelCase(obj.command
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            )
+            menu.innerHTML += `
+                <div>
+                    <input type="radio" name="radio" id="radio_${camelCommand}">
+                    <div class="row">
+                        <label for="radio_${camelCommand}">
+                            ${obj.type === "link" ? `<a href="#${camelCommand}" class="comando">${obj.command}</a> ` : `<span class="comando">${obj.command}</span>`}
+                            <code>${obj.key}</code>
+                            <input type="hidden" value="${obj.path}">
+                        </label>
+                    </div>
+                </div>
+            `
         })
 
         content.appendChild(article)
     })
-
-    selectedRow(content.querySelectorAll('table tbody tr'));
 });

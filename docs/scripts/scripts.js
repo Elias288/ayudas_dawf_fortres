@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     document.getElementById('menuToggle').addEventListener('click', toggleSideNav)
 
     await chargeFooter();
-
 })
 
 onresize = () => { onResizeFunction() } // cuando la página se reescala

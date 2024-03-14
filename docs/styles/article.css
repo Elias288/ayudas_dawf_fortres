@@ -9,7 +9,7 @@ article {
         padding: 15px;
         margin-inline: auto;
 
-        table#menu {
+        /* table#menu {
             width: 100%;
 
             tbody tr {
@@ -52,6 +52,40 @@ article {
                 }
 
             }
+        } */
+    }
+
+    .row {
+        margin-bottom: 0.3rem;
+        background-color: #fff;
+        color: #000;
+
+        label,
+        &.listHeader {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: .3rem 1rem;
+            border-radius: 5px;
+
+            .comando {
+                flex: 1;
+            }
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked {
+            &+.row label {
+                background-color: #000;
+                color: #fff;
+            }
+
+            &+.row code {
+                color: #000;
+            }
         }
     }
 
@@ -65,13 +99,13 @@ article {
     article {
         width: calc(100% - var(--sideNav-width));
 
-        >* table#menu tbody tr {
+        /* >* table#menu tbody tr {
 
             &:hover,
             &:hover a {
                 background-color: #8b8b8b;
                 color: #fff;
             }
-        }
+        } */
     }
 }

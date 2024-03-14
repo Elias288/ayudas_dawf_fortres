@@ -23,12 +23,6 @@ const comandosData = [
             },
             {
                 "command": "Ver unidades",
-                "key": "v",
-                "path": "v",
-                "type": "text"
-            },
-            {
-                "command": "Ver unidades",
                 "key": "u",
                 "path": "u",
                 "type": "text"
@@ -898,7 +892,7 @@ const comandosData = [
         "key": "b + w",
         "data": [
             {
-                "command": "Cuero",
+                "command": "Taller de Cuero",
                 "key": "e",
                 "path": "b + w + e",
                 "type": "text"
@@ -928,13 +922,13 @@ const comandosData = [
                 "type": "text"
             },
             {
-                "command": "Arqueria",
+                "command": "Taller de Arquería",
                 "key": "b",
                 "path": "b + w + b",
                 "type": "text"
             },
             {
-                "command": "Carpintero",
+                "command": "Taller de Carpintería",
                 "key": "c",
                 "path": "b + w + c",
                 "type": "text"
@@ -946,13 +940,13 @@ const comandosData = [
                 "type": "text"
             },
             {
-                "command": "Joyeros",
+                "command": "Taller de Joyeros",
                 "key": "j",
                 "path": "b + w + j",
                 "type": "text"
             },
             {
-                "command": "Albañileria",
+                "command": "Taller de Albañileria",
                 "key": "m",
                 "path": "b + w + m",
                 "type": "text"
@@ -964,13 +958,13 @@ const comandosData = [
                 "type": "text"
             },
             {
-                "command": "Curtidores",
+                "command": "Taller de Curtidores",
                 "key": "n",
                 "path": "b + w + n",
                 "type": "text"
             },
             {
-                "command": "Artesanos",
+                "command": "Taller de Artesanos",
                 "key": "r",
                 "path": "b + w + r",
                 "type": "text"
@@ -994,7 +988,7 @@ const comandosData = [
                 "type": "text"
             },
             {
-                "command": "Agricultura",
+                "command": "Taller de Agricultura",
                 "key": "w",
                 "path": "b + w + w",
                 "type": "text"
