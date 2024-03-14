@@ -1,5 +1,5 @@
 import stonesenseData from '../data/stonesense.mjs';
-import { selectedRow, showPath } from './generalFunctons.js'
+import { selectedRow, toCamelCase } from './generalFunctons.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const content = document.getElementById('content');
@@ -8,28 +8,32 @@ document.addEventListener('DOMContentLoaded', function () {
     article.innerHTML += `
     <div>
         <h2>${stonesenseData.name}</h2>
-        <table id="menu">
-            <thead>
-                <tr>
-                    <th class="bold">Acción</th>
-                    <th class="bold">Comando</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <div id="menu">
+            <div class="row listHeader">
+                <span class="bold comando">Acción</span>
+                <span class="bold">Comando</span>
+            </div>
+        </div>
     </div>
     `
 
-    const tbody = article.querySelector('tbody')
+    const menu = article.querySelector('#menu')
     stonesenseData.data.forEach(obj => {
-        var newRow = tbody.insertRow();
-        var cell1 = newRow.insertCell(0);
-        var cell2 = newRow.insertCell(1);
-
-        newRow.onmouseenter = () => showPath(obj.command, obj.key)
-
-        cell1.innerHTML = `<span >${obj.command}</span>`;
-        cell2.innerHTML = `<span class="bold">${obj.key}</span><input type="hidden" name="path" value="${obj.path}">`;
+        const camelCommand = toCamelCase(obj.command
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        )
+        menu.innerHTML += `
+            <div>
+                <input type="radio" name="radio" id="radio_${camelCommand}">
+                <div class="row">
+                    <label for="radio_${camelCommand}">
+                        <span class="comando">${obj.command}</span>
+                        <code>${obj.key}</code>
+                        <input type="hidden" value="${obj.path}">
+                    </label>
+                </div>
+            </div>
+        `
     })
 
     content.appendChild(article)
