@@ -151,6 +151,6 @@ footer {
 
     .showPath {
         bottom: .3px;
-        right: var(--sideNav-width);
+        right: calc(var(--sideNav-width) + 16px);
     }
 }

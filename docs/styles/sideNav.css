@@ -8,6 +8,7 @@
 
     height: calc(100vh - var(--header-height));
     width: 0;
+    padding-bottom: 10rem;
     transition: 0.5s;
     overflow-x: hidden;
 

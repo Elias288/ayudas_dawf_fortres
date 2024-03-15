@@ -40,30 +40,25 @@ function selectedRow(filas) {
 }
 
 /**
- * @param {string} command
- * @param {string} keys
+ * Carga en el componente showPath la información del elemento
  */
-const showPath = (command, keys) => {
+const showPath = (row) => {
+    const command = row.querySelector('.comando').innerText,
+        inputHidden = row.querySelector('input[type="hidden"]');
+
+    let path = inputHidden
+        ? inputHidden.value
+        : row.querySelector('label code').innerText;
+
     const showPathDiv = document.getElementById('showPath')
     showPathDiv.style.height = "fit-content"
-    showPathDiv.querySelector('.command').innerText = command
-    showPathDiv.querySelector('.keys').innerText = keys
+    showPathDiv.querySelector('.command').innerText = command;
+    showPathDiv.querySelector('.keys').innerText = path
 }
-
-/**
- * Oculta el showPath (solo para links)
- */
-const disablePath = () => {
-    const showPathDiv = document.getElementById('showPath')
-    showPathDiv.style.height = "0"
-    showPathDiv.querySelector('.command').innerText = ""
-    showPathDiv.querySelector('.keys').innerText = ""
-}
+window.showPath = showPath;
 
 export {
     pcSize,
     toCamelCase,
     selectedRow,
-    showPath,
-    disablePath
 }

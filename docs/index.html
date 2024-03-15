@@ -35,6 +35,36 @@
         <div id="content"></div>
     </main>
 
+    <template id="articleTemplate">
+        <article id="">
+            <div class="articleContent">
+                <h2>
+                    <code></code>
+                    <span></span>
+                </h2>
+                <div id="menu">
+                    <div class="listHeader">
+                        <span class="bold comando">Acción</span>
+                        <span class="bold">Comando</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <template id="rowTemplate">
+        <div>
+            <input type="radio" name="radio" id="radio_">
+            <div class="row" onclick="showPath(this)">
+                <label for="radio_">
+                    <span class="comando"></span>
+                    <code></code>
+                    <input type="hidden" value="">
+                </label>
+            </div>
+        </div>
+    </template>
+
     <script type="module" src="scripts/scripts.js"></script>
     <script type="module" src="scripts/chargeComandosData.js"></script>
 </body>

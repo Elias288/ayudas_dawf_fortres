@@ -8,51 +8,6 @@ article {
         max-width: 500px;
         padding: 15px;
         margin-inline: auto;
-
-        /* table#menu {
-            width: 100%;
-
-            tbody tr {
-                cursor: pointer;
-                height: 1.8rem;
-
-                &.selected,
-                &.selected a {
-                    background-color: #000;
-                    color: #fff;
-                }
-
-                &:hover code,
-                &.selected code {
-                    color: #000;
-                }
-
-                span,
-                a {
-                    display: block;
-                }
-            }
-
-            td,
-            th {
-                padding: 0 .5rem;
-                width: 100%;
-                text-align: start;
-                font-weight: 400;
-                border-bottom: 1px solid #cccccc;
-
-                &:last-of-type {
-                    text-align: end;
-                    min-width: fit-content;
-                }
-
-                label {
-                    width: 100%;
-                    display: block;
-                }
-
-            }
-        } */
     }
 
     .row {
@@ -60,8 +15,7 @@ article {
         background-color: #fff;
         color: #000;
 
-        label,
-        &.listHeader {
+        label {
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -74,11 +28,23 @@ article {
         }
     }
 
+    .listHeader {
+        display: flex;
+        align-items: center;
+        padding: .3rem 1rem;
+
+        .comando {
+            flex: 1;
+        }
+    }
+
     input[type="radio"] {
         display: none;
 
         &:checked {
-            &+.row label {
+
+            &+.row label,
+            &+.row a {
                 background-color: #000;
                 color: #fff;
             }
@@ -99,13 +65,17 @@ article {
     article {
         width: calc(100% - var(--sideNav-width));
 
-        /* >* table#menu tbody tr {
+        .row label {
 
             &:hover,
             &:hover a {
                 background-color: #8b8b8b;
                 color: #fff;
+
+                & code {
+                    color: #000;
+                }
             }
-        } */
+        }
     }
 }

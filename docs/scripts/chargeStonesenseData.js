@@ -1,41 +1,33 @@
 import stonesenseData from '../data/stonesense.mjs';
-import { selectedRow, toCamelCase } from './generalFunctons.js'
+import { toCamelCase } from './generalFunctons.js'
 
 document.addEventListener('DOMContentLoaded', function () {
-    const content = document.getElementById('content');
+    const contentDiv = document.getElementById('content');
 
-    const article = this.createElement('article')
-    article.innerHTML += `
-    <div>
-        <h2>${stonesenseData.name}</h2>
-        <div id="menu">
-            <div class="row listHeader">
-                <span class="bold comando">Acción</span>
-                <span class="bold">Comando</span>
-            </div>
-        </div>
-    </div>
-    `
+    if ("content" in document.createElement('template')) {
+        const articleTemplate = document.querySelector('#articleTemplate'), // instancias de documentos clonados
+            rowTemplate = document.querySelector('#rowTemplate') // instancias de documentos clonados 
 
-    const menu = article.querySelector('#menu')
-    stonesenseData.data.forEach(obj => {
-        const camelCommand = toCamelCase(obj.command
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-        )
-        menu.innerHTML += `
-            <div>
-                <input type="radio" name="radio" id="radio_${camelCommand}">
-                <div class="row">
-                    <label for="radio_${camelCommand}">
-                        <span class="comando">${obj.command}</span>
-                        <code>${obj.key}</code>
-                        <input type="hidden" value="${obj.path}">
-                    </label>
-                </div>
-            </div>
-        `
-    })
+        const cloneArticle = articleTemplate.content.cloneNode(true), // article clonado
+            articleMenu = cloneArticle.querySelector('#menu'), // elemento #menu
+            camelId = toCamelCase(stonesenseData.name.normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
 
-    content.appendChild(article)
-    selectedRow(content.querySelectorAll('table tbody tr'));
+        cloneArticle.querySelector('article').id = camelId;
+        cloneArticle.querySelector('h2 span').textContent = stonesenseData.name
+
+        stonesenseData.data.forEach(obj => {
+            const cloneRow = rowTemplate.content.cloneNode(true), // se clona un row por cada dato
+                rowComando = cloneRow.querySelector('.row label .comando'),
+                camelCommand = toCamelCase(obj.command.normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+
+            cloneRow.querySelector('input[type="radio"]').id = `radio_${camelCommand}`
+            cloneRow.querySelector('.row label').htmlFor = `radio_${camelCommand}`
+            rowComando.textContent = obj.command // se le agrega el texto
+            cloneRow.querySelector('.row code').innerText = obj.key
+
+            articleMenu.appendChild(cloneRow)
+        })
+
+        contentDiv.appendChild(cloneArticle)
+    }
 })
