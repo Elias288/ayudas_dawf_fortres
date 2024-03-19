@@ -114,7 +114,7 @@ const movimientoYMenu = {
 
         <p>
             Con el <code>Tab</code> podremos intercambiar la visualización del costado, mostrando un mapa,
-            las <a href="index.html#menu">opciones del menú</a> o ambas.
+            las <a href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Menu?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="external" class="external">opciones del menú</a> o ambas.
         </p>
 
         <details class="menu" open>
@@ -168,7 +168,7 @@ const primerasAcciones = {
             <div class="sangria line">
                 <p>La tala de arboles <code>d + t</code> nos permitirá marcar los arboles de donde conseguir
                     <a href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Wood?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">madera</a> para la construcción de distintos
+                        target=_blank rel="noopener noreferrer" class="external">madera</a> para la construcción de distintos
                     artefactos, al ser seleccionado nos permitirá elejir la zona en la que realizarla
                     marcando las dos esquinas de la zona a talar.
                 <p>Para está designación es necesario un enano con profeción de <strong>Carpintero</strong>.
@@ -178,7 +178,7 @@ const primerasAcciones = {
             <summary class="bold noTextSelection cursorPointer">Minado</summary>
             <div class="sangria line">
                 <p>El <a href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Mining?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Minado</a> <code>d + d</code> nos permitirá
+                        target=_blank rel="noopener noreferrer" class="external">Minado</a> <code>d + d</code> nos permitirá
                     escarbar en los ejes X Y del mundo para construir nuestra fortaleza.
                 <p>Para está designación es necesario un enano con profeción de <strong>Minero</strong>.
                 <p>Una opcion
@@ -189,7 +189,7 @@ const primerasAcciones = {
             <div class="sangria line">
                 <p>Las <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Stairs?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Escaleras</a> permiten a los enanos acceder
+                        target=_blank rel="noopener noreferrer" class="external">Escaleras</a> permiten a los enanos acceder
                     a diferentes nieveles de altura en el mundo. Existen 3 tipos de escaleras:
                 <ol>
                     <li><code>d + u</code> Escaleras arriba
@@ -202,7 +202,7 @@ const primerasAcciones = {
             <summary class="bold noTextSelection cursorPointer">Recolección de plantas</summary>
             <div class="sangria line">
                 <p>La <a href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Herbalist?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Recolección de plantas</a>
+                        target=_blank rel="noopener noreferrer" class="external">Recolección de plantas</a>
                     <code>d + p</code> probeé a los enanos de plantas y semillas silvestres.
                 <p>Para está designación es necesario un enano con profeción de <strong>Herbolario</strong>.
             </div>
@@ -213,12 +213,17 @@ const primerasAcciones = {
                 <p>
                     Las <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Scheduling?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Alertas</a> <code>a</code> se listan los
+                        target=_blank rel="noopener noreferrer" class="external">Alertas</a> <code>a</code> se listan los
                     eventos importantes que suceden en el mundo.
                 </p>
             </div>
         </details>
     `
+}
+
+const serviciosBasicos = {
+    name: 'Servicios Básicos',
+    content: `<h2>Servicios Básicos</h2><p>En la fortaleza cada enano tiene necesidades básicas como comer, beber, trabajar y dormir.<details open is=serviciosBasicos/comida><summary class=\"bold cursorPointer noTextSelection\">Comida</summary><div class=sangria><p>Para la comida y bebida es necesaria la <a href=guias.html#comida>producción de Comida</a> mediante granajas, recolección de plantas silvestres o la cría de animales.</div></details><details open id=serviciosBasicos/trabajos><summary class=\"bold cursorPointer noTextSelection\">Trabajos</summary><div class=sangria><p>Para el trabajo es necesaria la construcción de los <a href=guias.html#talleres>Talleres</a> de diferentes industrias para los enanos con las profeciones correctas.<p>Para <a href=\"https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Labor?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp&_x_tr_hist=true#Assigning_labors\"class=external rel=\"noopener noreferrer\"target=_blank>asignar labores</a> a un enano seleccionado desde la pantalla principal o desde el menú de unidades <code>u</code> se puede entrar a las preferencias <code>p</code> y al menú laborál <code>l</code> para ver que trabajos tiene habilitado realizar y poder activarselas o desactivarselas con el <code>Enter</code>.</div></details><details open id=serviciosBasicos/dormitorios><summary class=\"bold cursorPointer noTextSelection\">Dormitorios</summary><div class=sangria><p>Los <a href=\"https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Bedroom?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp\"class=external rel=\"noopener noreferrer\"target=_blank>Dormitorios</a> son consideradas <a href=\"https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Room?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp\"class=external rel=\"noopener noreferrer\"target=_blank>habitaciones</a> donde los enanos pueden descanzar.<p>Para definir un agujero como dormitorio es necesario construir una <a href=guias.html#construcciones/cama>cama</a> <code>b + b</code> y entrando en ella con la <code>q</code> se podrá definir como dormitorio pulsando <code>r</code> y con <code>+ / -</code> definir su tamaño. Una vez establecida como dormitorio se puede definir a que enano pertenece <code>a</code> o dejarlo que se asigne automaticamente.</div></details><details open id=serviciosBasicos/hospital><summary class=\"bold cursorPointer noTextSelection\">Hospital</summary><div class=sangria><p>El <a href=guias.html#zonas/hospital>Hospital</a></div></details><details open id=serviciosBasicos/Cementerio><summary class=\"bold cursorPointer noTextSelection\">Cementerio</summary><div class=sangria><p>Cuando un enano, mascota o animal muere es necesario tratar con el cadaver, ya que dentro de la fortaleza generará <a href=\"https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Miasma?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp\"class=external rel=\"noopener noreferrer\"target=_blank>Miazma</a> o en otros casos bajar la moralidad de los enanos al ver un cadaver.<p>Existen varias formas de prevenir que un cadaver se pudra dentro de la fortaleza.<p>La más básica de ellas es creando un <a href=guias.html#zonas/vertedero>Vertedero</a> <code>i + d</code> donde llevar los desechos de animales sacrificados o comida podrida, y en caso de un enano sin una tumba designada.<p>La opción más digna para los enanos y sus mascotas es construyendo un <a href=guias.html#construcciones/ataud>Ataúd</a> <code>b + n</code> y al seleccionarla activarla como tumba <code>b</code>.<p>Con eso podremos:<ul><li><code>c</code> Habilitarla/desabilitarla para ciudadanos.<li><code>p</code> Habilitarla/desabilitarla para mascotas. (por defecto desactivada)<li><code>r</code> Designarla a un enano.</ul></div></details>`
 }
 
 const comida = {
@@ -231,19 +236,28 @@ const comida = {
         </p>
 
         <details id="comida/granjas" open>
-            <summary class="bold noTextSelection cursorPointer">Granjas</summary>
+            <summary class="bold noTextSelection cursorPointer">
+                Granjas
+            </summary>
             <div class="sangria line">
                 <p>
                     Las <a href="guias.html#construcciones/granja">Granjas</a> <code>b + p</code> nos
                     permitirán cultivar diferentes plantas que pueden ser utilizadas tanto para la comida y
                     bebida como para la industra textil.
                 </p>
+                <p>
+                    Para procesar las plantas en otros productos se necesita el taller de 
+                    <a href="guias.html#talleres/comida/tallerDeAgricultura">Agricultura</a> para producir 
+                    hilo, jarabe o unguentos y la
+                    <a href="guias.html#talleres/comida/destileria">Destilería</a> para producir cerveza,
+                    vino o extractos.
+                </p>
             </div>
         </details>
         <details id="comida/destileríaDeAlcohol" open>
             <summary class="bold noTextSelection cursorPointer">Destilería de alcohol</summary>
             <div class="sangria line">
-                <p>La <a href="guias.html#talleres/comida/destilería">destilería de alcohol</a>
+                <p>La <a href="guias.html#talleres/comida/destilería">Destilería de alcohol</a>
                     <code>b + w + l</code> es un taller básico para una fortaleza enana, que sirve para la
                     fabricación de distintas bebidas alcoholicas.
                 <p>Una vez se tengan plantas para producir alcohol, debemos dar la orden de fabricarlo con
@@ -261,7 +275,7 @@ const comida = {
                     <code>n</code> la designamos como zona de corral/pastoreo.
                 <p>Todos los animales que se tengan pueden ser sacrificados en una <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Butcher%27s_shop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Carnicería</a> <code>b + w + u</code> tanto
+                        target=_blank rel="noopener noreferrer" class="external">Carnicería</a> <code>b + w + u</code> tanto
                     para obtener carne como cuero y huesos.
                 <p>Cuando se quiera sacrificar un animal lo podremos hacer desde el menú <code>z</code>, ir
                     a la pestaña de animales y marcar como "listo para el sacrificio" usando la
@@ -299,7 +313,7 @@ const depositos = {
         <p>
             En los <a
                 href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Menu?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Stockpiles_Menu"
-                target=_blank rel="noopener noreferrer">Depositos</a> <code>p</code> los enanos irán dejando
+                target=_blank rel="noopener noreferrer" class="external">Depositos</a> <code>p</code> los enanos irán dejando
             todos los objetos que esten especificados para cada depósito.
         </p>
         <p>
@@ -362,10 +376,10 @@ const depositos = {
         <details id=depositos/depositoDeCadaveres open>
             <summary class="noTextSelection cursorPointer">
                 <code>p + y</code> <strong>Depósito de
-                    Cadaveres</strong>
+                    Cadáveres</strong>
             </summary>
             <div class="sangria line">
-                <p>Almacena cadaveres de animales y enanos muertos si no hay un cementerio asignado.
+                <p>Almacena cadáveres de animales y enanos muertos si no hay un cementerio asignado.
                 <p>Se recomienda hacerlo al aire libre, ya que en un lugar cerrado genera miasma.
             </div>
         </details>
@@ -516,7 +530,7 @@ const talleres = {
     content: `
         <h2>Talleres</h2>
         <p>
-            En los <a rel="noopener noreferrer"
+            En los <a rel="noopener noreferrer" class="external"
                 href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                 target=_blank>Talleres</a> <code>b + w</code> es donde los enanos toman las materias prima y
             las procesan para fabricar proudctos terminados.
@@ -549,7 +563,7 @@ const talleres = {
                     <p>
                         En el <a
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Farmer%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target="_blank" rel="noopener noreferrer">taller de Agricultura</a> un enano
+                            target="_blank" rel="noopener noreferrer" class="external">taller de Agricultura</a> un enano
                         <strong>granjero</strong> podrá realizar las siguientes actividades:
                     </p>
 
@@ -576,7 +590,7 @@ const talleres = {
                     <p>
                         En la <a
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Fishery?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target="_blank" rel="noopener noreferrer">Pescadería</a> un enano
+                            target="_blank" rel="noopener noreferrer" class="external">Pescadería</a> un enano
                         <strong>limpiador de pescados</strong> podrá procesar todo lo que se obtenga de la
                         pesca. El procesamiento de peces crudos está activado por defecto, se puede pausar
                         con la <code>s</code> o cancelar con la <code>c</code>.
@@ -589,13 +603,13 @@ const talleres = {
                     </ul>
                 </div>
             </details>
-            <details id=talleres/comida/destilería open>
+            <details id=talleres/comida/destileria open>
                 <summary class="noTextSelection cursorPointer">
                     <code>b + w + l</code> <strong>Destilería</strong>
                 </summary>
                 <div class="sangria line">
                     <p>
-                        La <a rel="noopener noreferrer"
+                        La <a rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Still?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                             target=_blank>destilería</a> de alcohol permite a un enano
                         <strong>cervecero</strong> fabricar su propio alchol utilzando las plantas
@@ -614,14 +628,14 @@ const talleres = {
                         se conserva la semilla.</p>
                 </div>
             </details>
-            <details id=talleres/comida/carnicería open>
+            <details id=talleres/comida/carniceria open>
                 <summary class="noTextSelection cursorPointer">
                     <code>b + w + u</code> <strong>Carnicería</strong>
                 </summary>
                 <div class="sangria line">
                     <p>En la <a
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Butcher%27s_shop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target="_blank" rel="noopener noreferrer">Carnicería</a> un enano
+                            target="_blank" rel="noopener noreferrer" class="external">Carnicería</a> un enano
                         <strong>carnicero</strong> podrá sacrificar animales para producir carne y huesos.
                     </p>
                     <p>A diferencia de otros talleres para sacrificar el animal existen 2 formas:</p>
@@ -642,7 +656,7 @@ const talleres = {
                 </summary>
                 <div class="sangria line">
                     <p>
-                        En la <a rel="noopener noreferrer"
+                        En la <a rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Kitchen?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                             target=_blank>Cocina</a> un enano <strong>cocinero</strong> podrá cocinar
                         comidas preparadas y convertir la grasa de los animales en sebo.
@@ -692,9 +706,9 @@ const talleres = {
                 </summary>
                 <div class="sangria line">
                     <p>
-                        En el <a rel="noopener noreferrer"
+                        En el <a rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Carpenter%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target=_blank>taller de Carpintería</a> un enano <strong>carpintero</strong>
+                            target=_blank>taller de Carpinterí</a> un enano <strong>carpintero</strong>
                         puede
                         fabricar objetos de madera.
                     </p>
@@ -747,9 +761,9 @@ const talleres = {
                 </summary>
                 <div class="sangria line">
                     <p>
-                        En el <a rel="noopener noreferrer"
+                        En el <a rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Mason%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target=_blank>taller de Albañilería </a>un enano <strong>albañil</strong> puede
+                            target=_blank>taller de Albañilería</a> un enano <strong>albañil</strong> puede
                         fabricar
                         objetos de piedra.
                     </p>
@@ -784,7 +798,7 @@ const talleres = {
                         Joyería</strong>
                 </summary>
                 <div class="sangria line">
-                    <p>En elñ <a rel="noopener noreferrer"
+                    <p>En elñ <a rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Jeweler%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                             target=_blank>taller de Joyería</a> un enano <strong>joyero</strong> puede
                         cortar gemas o
@@ -806,7 +820,7 @@ const talleres = {
                 </summary>
                 <div class="sangria line">
                     <p>
-                        En el <a rel="noopener noreferrer" rel="noopener noreferrer"
+                        En el <a rel="noopener noreferrer" class="external" rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Craftsdwarf%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                             target=_blank>taller de Artesanos</a> un enano <strong>artesano</strong> puede
                         fabricar
@@ -823,7 +837,7 @@ const talleres = {
                 </summary>
                 <div class="sangria line">
                     <p>
-                        En el <a rel="noopener noreferrer" rel="noopener noreferrer"
+                        En el <a rel="noopener noreferrer" class="external" rel="noopener noreferrer" class="external"
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Mechanic%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
                             target=_blank>taller Mecánico</a> un enano <strong>mecánico</strong> puede
                         fabricar
@@ -851,10 +865,10 @@ const talleres = {
                     <p>
                         En el <a
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Soap_maker%27s_workshop?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target="_blank" rel="noopener noreferrer">taller de Jabón</a> un enano con
+                            target="_blank" rel="noopener noreferrer" class="external">taller de Jabón</a> un enano con
                         profecion de <strong>jabonero</strong> puede producir <a
                             href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Soap?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                            target="_blank" rel="noopener noreferrer">jabón</a> usando legía y grasa.
+                            target="_blank" rel="noopener noreferrer" class="external">jabón</a> usando legía y grasa.
                     </p>
                     <p>
                         El jabón es importante para reducir la posibilidad de infecciones en el hospital.
@@ -975,7 +989,7 @@ const construcciones = {
             Una acción importante en nuestra fortaleza es la construcción de diferentes elementos
             (edificios, muebles, muros, etc), esto lo podemos realizar desde el menú de <a
                 href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Menu?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Building_Menu"
-                target="_blank" rel="noopener noreferrer">Construcción</a> <code>b</code>.
+                target="_blank" rel="noopener noreferrer" class="external">Construcción</a> <code>b</code>.
         </p>
         <p>
             En muchos casos es necesario fabricar el mueble/objeto antes de poder colocarlo y en algunos
@@ -991,7 +1005,7 @@ const construcciones = {
                 <p>
                     Un <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Armor_stand?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Soporte de armadura</a> es un tipo de
+                        target="_blank" rel="noopener noreferrer" class="external">Soporte de armadura</a> es un tipo de
                     mueble que valoriza una habitación. Puede ser usado para definir un cuartel.
                 </p>
             </div>
@@ -1005,7 +1019,7 @@ const construcciones = {
                 <p>
                     La <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Bed?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Cama</a> es un mueble fabricado en la
+                        target="_blank" rel="noopener noreferrer" class="external">Cama</a> es un mueble fabricado en la
                     <a href="guias.html#talleres/básicos/tallerDeCarpintería">Taller de carpinería</a>
                     que puede ser usada para definir dormitorios o cuartel donde los enanos puedan
                     dormir.
@@ -1021,14 +1035,14 @@ const construcciones = {
                 <p>
                     Un <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Throne?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Asiento de madera o trono de
+                        target="_blank" rel="noopener noreferrer" class="external">Asiento de madera o trono de
                         piedra</a> es un mueble que los enanos pueden usar para sus rutinas diarias. Al
                     igual que las mesas son una parte de los comedores.
                 </p>
             </div>
         </details>
 
-        <details id="construcciones/ataúd" open>
+        <details id="construcciones/ataud" open>
             <summary class="noTextSelection cursorPointer">
                 <code>b + n</code> <strong>Ataúd</strong>
             </summary>
@@ -1036,13 +1050,20 @@ const construcciones = {
                 <p>
                     Un <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Coffin?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Ataúd</a> es un contenedor para los
+                        target="_blank" rel="noopener noreferrer" class="external">Ataúd</a> es un contenedor para los
                     cuerpos de enanos fallecidos y sus mascotas.
                 </p>
                 <p>
-                    Puede ser asignado a un enano/mascota entrando con la <code>n</code> y
-                    seleccionandolo.
+                    Una vez construido, debe ser asignado como tumba con la <code>b</code> donde se podrán ver las siguientes 
+                    opciones:
                 </p>
+                <ul>
+                    <li><code>c</code> Habilitarla/desabilitarla para ciudadanos.</li>
+                    <li>
+                        <code>p</code> Habilitarla/desabilitarla para mascotas. (por defecto desactivada)
+                    </li>
+                    <li><code>r</code> Designarla a un enano.</li>
+                </ul>
             </div>
         </details>
 
@@ -1054,7 +1075,7 @@ const construcciones = {
                 <p>
                     Una <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Door?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Puerta</a> es un mueble utilzado para
+                        target="_blank" rel="noopener noreferrer" class="external">Puerta</a> es un mueble utilzado para
                     controlar el movimiento de enanos, mascotas, liquidos y delimitar habitaciones.
                 </p>
                 <p>
@@ -1094,7 +1115,7 @@ const construcciones = {
                 <p>
                     Una <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Floodgate?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Compuerta</a> es un tipo de puerta que
+                        target="_blank" rel="noopener noreferrer" class="external">Compuerta</a> es un tipo de puerta que
                     permite controlar el flujo de liquidos (agua, magma), que debe ser accionada
                     mediante mecanismos por una palanca o placa de presión que las abren o cierran.
                 </p>
@@ -1123,7 +1144,7 @@ const construcciones = {
                 <p>
                     Una <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Hatch_cover?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp&_x_tr_hist=true"
-                        target="_blank" rel="noopener noreferrer">Tapa de escotilla</a> es un tipo de
+                        target="_blank" rel="noopener noreferrer" class="external">Tapa de escotilla</a> es un tipo de
                     puerta que permite controlar el paso entre niveles Z, que puede ser colocado en
                     escaleras o rampas.
                 </p>
@@ -1196,7 +1217,7 @@ const construcciones = {
                 <p>
                     Un <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Cabinet?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Armario</a> es un tipo de mueble que
+                        target="_blank" rel="noopener noreferrer" class="external">Armario</a> es un tipo de mueble que
                     utilizan los enanos para guardar su ropa. Son un requisito para las habitaciones de
                     los nobles ya que aumentan el valor de una.
                 </p>
@@ -1220,7 +1241,7 @@ const construcciones = {
                 <p>
                     Un <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Container?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Contenedor</a> es un termino general
+                        target="_blank" rel="noopener noreferrer" class="external">Contenedor</a> es un termino general
                     para varios tipos de artículos similares utilizados para el almacenamiento y tienen
                     un comportamiento similar.
                 </p>
@@ -1253,7 +1274,7 @@ const construcciones = {
                 <p>
                     Las <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Farming?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">Granjas</a> son parcelas donde realizar
+                        target=_blank rel="noopener noreferrer" class="external">Granjas</a> son parcelas donde realizar
                     la agricultura de todos los cultivos.
                 </p>
 
@@ -1279,7 +1300,7 @@ const construcciones = {
                     las teclas <code>h k</code> agrandaremos en el eje Y. Solo pueden ser colocadas
                     sobre <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Soil?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target=_blank rel="noopener noreferrer">suelo</a> lo que podria implicar la
+                        target=_blank rel="noopener noreferrer" class="external">suelo</a> lo que podria implicar la
                     necesidad de irrigar en caso de no encontrar en el subsuelo.
                 </p>
                 <p>
@@ -1363,7 +1384,7 @@ const construcciones = {
                 <p>
                     Una <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Table?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Mesa</a> es un mueble necesario para
+                        target="_blank" rel="noopener noreferrer" class="external">Mesa</a> es un mueble necesario para
                     que los enanos puedan comer comodamente asi como también para definir una habitación
                     como comedor y como mesa de operación en un hospital.
                 </p>
@@ -1516,7 +1537,7 @@ const construcciones = {
                 <p>
                     El <a
                         href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Trade_depot?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp"
-                        target="_blank" rel="noopener noreferrer">Almacén comercial</a> es el edificio
+                        target="_blank" rel="noopener noreferrer" class="external">Almacén comercial</a> es el edificio
                     que permite comerciar con las caravanas que lleguen a la fortaleza.
                 </p>
                 <p>
@@ -1746,15 +1767,24 @@ const construcciones = {
     `
 }
 
+const zonas = {
+    name: 'Zonas',
+    content: `
+       <h2>Zonas</h2><details id=zonas/fuenteDeAgua open><summary class="bold cursorPointer noTextSelection"><code>w</code> Fuente de agua</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Water_source"rel="noopener noreferrer"target=_blank>Fuentes de agua</a></div></details><details id=zonas/zonaDePesca open><summary class="bold cursorPointer noTextSelection"><code>f</code> Zona de pesca</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Fishing_zone"rel="noopener noreferrer"target=_blank>Zonas de pesca</a></div></details><details id=zonas/zonaDeRecolecciónDeFruta open><summary class="bold cursorPointer noTextSelection"><code>g</code> Zona de recolección de fruta</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Gather.2FPick_Fruit"rel="noopener noreferrer"target=_blank>Zonas de recolección de fruta</a></div></details><details id=zonas/vertedero open><summary class="bold cursorPointer noTextSelection"><code>g</code> Vertedero</summary><div class=sangria><p>Los <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Garbage_dump"rel="noopener noreferrer"target=_blank>Vertederos</a></div></details><details id=zonas/zonaDePastoreoCorral open><summary class="bold cursorPointer noTextSelection"><code>n</code> Zona de pastoreo/Corral</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Pen.2FPasture"rel="noopener noreferrer"target=_blank>Zonas de pastoreo</a></div></details><details id=zonas/fosoEstanque open><summary class="bold cursorPointer noTextSelection"><code>p</code> Foso/Estanque</summary><div class=sangria><p>Los <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Pit.2FPond"rel="noopener noreferrer"target=_blank>Fosos/Estanques</a></div></details><details id=zonas/zonaDeRecolecciónDeArena open><summary class="bold cursorPointer noTextSelection"><code>s</code> Zona de recolección de arena</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Sand_collection"rel="noopener noreferrer"target=_blank>Zonas de recolección de arena</a></div></details><details id=zonas/zonaDeRecolecciónDeArcilla open><summary class="bold cursorPointer noTextSelection"><code>s</code> Zona de recolección de arcilla</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Clay_collection"rel="noopener noreferrer"target=_blank>Zonas de recolección de arcilla</a></div></details><details id=zonas/zonaDeReuniones open><summary class="bold cursorPointer noTextSelection"><code>m</code> Zona de reuniones</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Meeting_area"rel="noopener noreferrer"target=_blank>Zonas de reuniones</a></div></details><details id=zonas/hospital open><summary class="bold cursorPointer noTextSelection"><code>h</code> Hospital</summary><div class=sangria><p>El <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Health_care?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp&_x_tr_hist=true"rel="noopener noreferrer"target=_blank>Hospital</a></div></details><details id=zonas/zonaDeAdiestramientoDeAnimales open><summary class="bold cursorPointer noTextSelection"><code>t</code> Zona de adiestramiento de animales</summary><div class=sangria><p>Las <a class=external href="https://dwarffortresswiki-org.translate.goog/index.php/DF2014:Activity_zone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=wapp#Animal_training"rel="noopener noreferrer"target=_blank>Zonas de adiestramiento de animales</a></div></details><details id=zonas/zonaActiva open><summary class="bold cursorPointer noTextSelection"><code>a</code> Zona activa</summary><div class=sangria><p></div></details>
+    `
+}
+
 const contentList = [
     opcionesDelJuego,
     ubicacionDelMapa,
     movimientoYMenu,
     primerasAcciones,
+    serviciosBasicos,
     comida,
     depositos,
     talleres,
-    construcciones
+    construcciones,
+    zonas
 ]
 
 export default contentList;

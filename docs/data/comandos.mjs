@@ -70,7 +70,7 @@ const comandosData = [
                 "type": "link"
             },
             {
-                "command": "Almacenes",
+                "command": "Depósitos",
                 "key": "p",
                 "path": "p",
                 "type": "link"
@@ -778,7 +778,7 @@ const comandosData = [
                 "type": "text"
             },
             {
-                "command": "Cuerpos",
+                "command": "Cadáveres",
                 "key": "y",
                 "path": "p + y",
                 "type": "text"
