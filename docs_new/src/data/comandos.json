@@ -1,0 +1,1124 @@
+[
+    {
+        "name": "Menu",
+        "key": "Esc",
+        "data": [
+            {
+                "command": "Ver anuncios",
+                "key": "a",
+                "path": "a",
+                "type": "text"
+            },
+            {
+                "command": "Ver habitaciones/edificios",
+                "key": "R",
+                "path": "R",
+                "type": "text"
+            },
+            {
+                "command": "Ver objetos en edificios",
+                "key": "t",
+                "path": "t",
+                "type": "text"
+            },
+            {
+                "command": "Ver unidades",
+                "key": "u",
+                "path": "u",
+                "type": "text"
+            },
+            {
+                "command": "Ver trabajos",
+                "key": "j",
+                "path": "j",
+                "type": "text"
+            },
+            {
+                "command": "Ver Informes",
+                "key": "r",
+                "path": "r",
+                "type": "text"
+            },
+            {
+                "command": "Ver Lugares y ocupaciones",
+                "key": "l",
+                "path": "l",
+                "type": "text"
+            },
+            {
+                "command": "Ver Nobles y administradores",
+                "key": "n",
+                "path": "n",
+                "type": "text"
+            },
+            {
+                "command": "Construir",
+                "key": "b",
+                "path": "b",
+                "type": "link"
+            },
+            {
+                "command": "Designaciones",
+                "key": "d",
+                "path": "d",
+                "type": "link"
+            },
+            {
+                "command": "Encargos",
+                "key": "o",
+                "path": "o",
+                "type": "link"
+            },
+            {
+                "command": "Depósitos",
+                "key": "p",
+                "path": "p",
+                "type": "link"
+            },
+            {
+                "command": "Escuadras",
+                "key": "s",
+                "path": "s",
+                "type": "text"
+            },
+            {
+                "command": "Militar",
+                "key": "m",
+                "path": "m",
+                "type": "text"
+            },
+            {
+                "command": "Información sobre el mundo",
+                "key": "c",
+                "path": "c",
+                "type": "link"
+            },
+            {
+                "command": "Acceso al depósito",
+                "key": "D",
+                "path": "D",
+                "type": "text"
+            },
+            {
+                "command": "Saludos",
+                "key": "h",
+                "path": "h",
+                "type": "text"
+            },
+            {
+                "command": "Teclas de acceso rápido",
+                "key": "H",
+                "path": "H",
+                "type": "text"
+            },
+            {
+                "command": "Zonas",
+                "key": "i",
+                "path": "i",
+                "type": "link"
+            },
+            {
+                "command": "Mirar",
+                "key": "k",
+                "path": "k",
+                "type": "text"
+            },
+            {
+                "command": "Estado",
+                "key": "z",
+                "path": "z",
+                "type": "text"
+            },
+            {
+                "command": "Establecer tareas de construcción/prefs",
+                "key": "q",
+                "path": "q",
+                "type": "text"
+            },
+            {
+                "command": "Punto/rutas/notas",
+                "key": "N",
+                "path": "N",
+                "type": "text"
+            },
+            {
+                "command": "Hacer madrigueras",
+                "key": "w",
+                "path": "w",
+                "type": "text"
+            },
+            {
+                "command": "Mover este menú/mapa",
+                "key": "Tab",
+                "path": "Tab",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Construir",
+        "key": "b",
+        "data": [
+            {
+                "command": "Soporte de armadura",
+                "key": "a",
+                "path": "b + a",
+                "type": "text"
+            },
+            {
+                "command": "Cama",
+                "key": "b",
+                "path": "b + b",
+                "type": "text"
+            },
+            {
+                "command": "Asiento",
+                "key": "c",
+                "path": "b + c",
+                "type": "text"
+            },
+            {
+                "command": "Ataúd",
+                "key": "n",
+                "path": "b + n",
+                "type": "text"
+            },
+            {
+                "command": "Puerta",
+                "key": "d",
+                "path": "b + d",
+                "type": "text"
+            },
+            {
+                "command": "Compuerta",
+                "key": "x",
+                "path": "b + x",
+                "type": "text"
+            },
+            {
+                "command": "Compuerta del suelo",
+                "key": "H",
+                "path": "b + H",
+                "type": "text"
+            },
+            {
+                "command": "Regilla de pared",
+                "key": "W",
+                "path": "b + W",
+                "type": "text"
+            },
+            {
+                "command": "Regilla del suelo",
+                "key": "G",
+                "path": "b + G",
+                "type": "text"
+            },
+            {
+                "command": "Barras verticales",
+                "key": "B",
+                "path": "b + B",
+                "type": "text"
+            },
+            {
+                "command": "Barras de suelo",
+                "key": "Alt + b",
+                "path": "b + Alt + b",
+                "type": "text"
+            },
+            {
+                "command": "Armario",
+                "key": "f",
+                "path": "b + f",
+                "type": "text"
+            },
+            {
+                "command": "Contenedor",
+                "key": "h",
+                "path": "b + h",
+                "type": "text"
+            },
+            {
+                "command": "Perreras",
+                "key": "k",
+                "path": "b + k",
+                "type": "text"
+            },
+            {
+                "command": "Parcela agricola",
+                "key": "p",
+                "path": "b + p",
+                "type": "text"
+            },
+            {
+                "command": "Estante de armas",
+                "key": "r",
+                "path": "b + r",
+                "type": "text"
+            },
+            {
+                "command": "Estatua",
+                "key": "s",
+                "path": "b + s",
+                "type": "text"
+            },
+            {
+                "command": "Losa",
+                "key": "Alt + s",
+                "path": "b + Alt + s",
+                "type": "text"
+            },
+            {
+                "command": "Mesa",
+                "key": "t",
+                "path": "b + t",
+                "type": "text"
+            },
+            {
+                "command": "Camino pavimentado",
+                "key": "o",
+                "path": "b + o",
+                "type": "text"
+            },
+            {
+                "command": "Camino de tierra",
+                "key": "O",
+                "path": "b + O",
+                "type": "text"
+            },
+            {
+                "command": "Puente",
+                "key": "g",
+                "path": "b + g",
+                "type": "text"
+            },
+            {
+                "command": "Pozo",
+                "key": "l",
+                "path": "b + l",
+                "type": "text"
+            },
+            {
+                "command": "Máquinas de asedio",
+                "key": "i",
+                "path": "b + i",
+                "type": "text"
+            },
+            {
+                "command": "Talleres",
+                "key": "w",
+                "path": "b + w",
+                "type": "link"
+            },
+            {
+                "command": "Hornos",
+                "key": "e",
+                "path": "b + e",
+                "type": "text"
+            },
+            {
+                "command": "Granja",
+                "key": "p",
+                "path": "b + p",
+                "type": "text"
+            },
+            {
+                "command": "Ventana de vidrio",
+                "key": "y",
+                "path": "b + y",
+                "type": "text"
+            },
+            {
+                "command": "Ventana de gemas",
+                "key": "Y",
+                "path": "b + Y",
+                "type": "text"
+            },
+            {
+                "command": "Pared/Suelo/Escalera/Via",
+                "key": "C",
+                "path": "b + C",
+                "type": "link"
+            },
+            {
+                "command": "Almacén comercial",
+                "key": "D",
+                "path": "b + D",
+                "type": "text"
+            },
+            {
+                "command": "Trampas/palanca",
+                "key": "T",
+                "path": "b + T",
+                "type": "text"
+            },
+            {
+                "command": "Componentes mecánicos",
+                "key": "M",
+                "path": "b + M",
+                "type": "text"
+            },
+            {
+                "command": "Instrumentos",
+                "key": "I",
+                "path": "b + I",
+                "type": "text"
+            },
+            {
+                "command": "Soporte",
+                "key": "S",
+                "path": "b + S",
+                "type": "text"
+            },
+            {
+                "command": "Trampa para animales",
+                "key": "m",
+                "path": "b + m",
+                "type": "text"
+            },
+            {
+                "command": "Jaula",
+                "key": "v",
+                "path": "b + v",
+                "type": "text"
+            },
+            {
+                "command": "Caja",
+                "key": "j",
+                "path": "b + j",
+                "type": "text"
+            },
+            {
+                "command": "Diana de arqueria",
+                "key": "A",
+                "path": "b + A",
+                "type": "text"
+            },
+            {
+                "command": "Banco de tiro",
+                "key": "R",
+                "path": "b + R",
+                "type": "text"
+            },
+            {
+                "command": "Nido en caja",
+                "key": "N",
+                "path": "b + N",
+                "type": "text"
+            },
+            {
+                "command": "Colmena",
+                "key": "Alt + h",
+                "path": "b + Alt + h",
+                "type": "text"
+            },
+            {
+                "command": "Lugar de ofrenda",
+                "key": "Alt + a",
+                "path": "b + Alt + a",
+                "type": "text"
+            },
+            {
+                "command": "Estanteria",
+                "key": "Alt + c",
+                "path": "b + Alt + c",
+                "type": "text"
+            },
+            {
+                "command": "Muebles de exposición",
+                "key": "F",
+                "path": "b + F",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Información sobre el mundo",
+        "key": "c",
+        "data": [
+            {
+                "command": "Centrar en la fortaleza",
+                "key": "y",
+                "path": "c + y",
+                "type": "text"
+            },
+            {
+                "command": "Retención y tributos",
+                "key": "h",
+                "path": "c + h",
+                "type": "text"
+            },
+            {
+                "command": "Mundo",
+                "key": "w",
+                "path": "c + w",
+                "type": "text"
+            },
+            {
+                "command": "Misiones",
+                "key": "m",
+                "path": "c + m",
+                "type": "text"
+            },
+            {
+                "command": "Noticias y rumores",
+                "key": "n",
+                "path": "c + n",
+                "type": "text"
+            },
+            {
+                "command": "Personas",
+                "key": "p",
+                "path": "c + p",
+                "type": "text"
+            },
+            {
+                "command": "Artefactos",
+                "key": "a",
+                "path": "c + a",
+                "type": "text"
+            },
+            {
+                "command": "Civilizaciones",
+                "key": "c",
+                "path": "c + c",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Designaciones",
+        "key": "d",
+        "data": [
+            {
+                "command": "Minar",
+                "key": "d",
+                "path": "d + d",
+                "type": "text"
+            },
+            {
+                "command": "Escalera arriba",
+                "key": "u",
+                "path": "d + u",
+                "type": "text"
+            },
+            {
+                "command": "Escalera abajo",
+                "key": "j",
+                "path": "d + j",
+                "type": "text"
+            },
+            {
+                "command": "Escalera arriba/abajo",
+                "key": "i",
+                "path": "d + i",
+                "type": "text"
+            },
+            {
+                "command": "Rampa arriba",
+                "key": "r",
+                "path": "d + r",
+                "type": "text"
+            },
+            {
+                "command": "Quitar escaleras/rampas arriba",
+                "key": "z",
+                "path": "d + z",
+                "type": "text"
+            },
+            {
+                "command": "Talar árboles",
+                "key": "t",
+                "path": "d + t",
+                "type": "text"
+            },
+            {
+                "command": "Recoger plantas",
+                "key": "p",
+                "path": "d + p",
+                "type": "text"
+            },
+            {
+                "command": "Piedra liza",
+                "key": "s",
+                "path": "d + s",
+                "type": "text"
+            },
+            {
+                "command": "Grabar piedra",
+                "key": "e",
+                "path": "d + e",
+                "type": "text"
+            },
+            {
+                "command": "Tallar fortificaciones",
+                "key": "f",
+                "path": "d + f",
+                "type": "text"
+            },
+            {
+                "command": "Tallar via",
+                "key": "T",
+                "path": "d + T",
+                "type": "text"
+            },
+            {
+                "command": "Grabados de palanca",
+                "key": "v",
+                "path": "d + v",
+                "type": "text"
+            },
+            {
+                "command": "Norma/marca de palanca",
+                "key": "M",
+                "path": "d + M",
+                "type": "text"
+            },
+            {
+                "command": "Quitar construcción",
+                "key": "n",
+                "path": "d + n",
+                "type": "text"
+            },
+            {
+                "command": "Quitar asignacion",
+                "key": "x",
+                "path": "d + x",
+                "type": "text"
+            },
+            {
+                "command": "Establecer la propiedad del edificio/item",
+                "key": "b",
+                "path": "d + b",
+                "type": "text"
+            },
+            {
+                "command": "Establecer zonas de tráfico",
+                "key": "o",
+                "path": "d + o",
+                "type": "link"
+            },
+            {
+                "command": "Canal",
+                "key": "h",
+                "path": "d + h",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Zonas",
+        "key": "i",
+        "data": [
+            {
+                "command": "Fuente de agua",
+                "key": "w",
+                "path": "i + w",
+                "type": "text"
+            },
+            {
+                "command": "Pesca",
+                "key": "f",
+                "path": "i + f",
+                "type": "text"
+            },
+            {
+                "command": "Recoger fruta",
+                "key": "g",
+                "path": "i + g",
+                "type": "text"
+            },
+            {
+                "command": "Vertedero",
+                "key": "d",
+                "path": "i + d",
+                "type": "text"
+            },
+            {
+                "command": "Corral/Pasto",
+                "key": "n",
+                "path": "i + n",
+                "type": "text"
+            },
+            {
+                "command": "Foso/estanque",
+                "key": "p",
+                "path": "i + p",
+                "type": "text"
+            },
+            {
+                "command": "Arena",
+                "key": "s",
+                "path": "i + s",
+                "type": "text"
+            },
+            {
+                "command": "Zona de reuniones",
+                "key": "m",
+                "path": "i + m",
+                "type": "text"
+            },
+            {
+                "command": "Hospital",
+                "key": "h",
+                "path": "i + h",
+                "type": "text"
+            },
+            {
+                "command": "Adiestramiento de animales",
+                "key": "t",
+                "path": "i + t",
+                "type": "text"
+            },
+            {
+                "command": "Activo",
+                "key": "a",
+                "path": "i + a",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Encargos",
+        "key": "o",
+        "data": [
+            {
+                "command": "Anunciar una cancelación de empleo",
+                "key": "x",
+                "path": "o + x",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir animales",
+                "key": "a",
+                "path": "o + a",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir comida",
+                "key": "f",
+                "path": "o + f",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir muebles",
+                "key": "u",
+                "path": "o + u",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir cadáveres",
+                "key": "g",
+                "path": "o + g",
+                "type": "text"
+            },
+            {
+                "command": "Desechar",
+                "key": "r",
+                "path": "o + r",
+                "type": "text"
+            },
+            {
+                "command": "Prohibir",
+                "key": "F",
+                "path": "o + F",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir minerales",
+                "key": "s",
+                "path": "o + s",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir madera",
+                "key": "w",
+                "path": "o + w",
+                "type": "text"
+            },
+            {
+                "command": "Enanos reunir la cosecha",
+                "key": "h",
+                "path": "o + h",
+                "type": "text"
+            },
+            {
+                "command": "Mezclar alimentos",
+                "key": "m",
+                "path": "o + m",
+                "type": "text"
+            },
+            {
+                "command": "Encargos de taller",
+                "key": "W",
+                "path": "o + W",
+                "type": "text"
+            },
+            {
+                "command": "Encargos en zonas de actividad",
+                "key": "z",
+                "path": "o + z",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Depósitos",
+        "key": "p",
+        "data": [
+            {
+                "command": "Animales",
+                "key": "a",
+                "path": "p + a",
+                "type": "text"
+            },
+            {
+                "command": "Muebles",
+                "key": "u",
+                "path": "p + u",
+                "type": "text"
+            },
+            {
+                "command": "Cadáveres",
+                "key": "y",
+                "path": "p + y",
+                "type": "text"
+            },
+            {
+                "command": "Piedras",
+                "key": "s",
+                "path": "p + s",
+                "type": "text"
+            },
+            {
+                "command": "Gemas",
+                "key": "e",
+                "path": "p + e",
+                "type": "text"
+            },
+            {
+                "command": "Ropa",
+                "key": "h",
+                "path": "p + h",
+                "type": "text"
+            },
+            {
+                "command": "Municiones",
+                "key": "z",
+                "path": "p + z",
+                "type": "text"
+            },
+            {
+                "command": "Productos acabados",
+                "key": "g",
+                "path": "p + g",
+                "type": "text"
+            },
+            {
+                "command": "Armas",
+                "key": "p",
+                "path": "p + p",
+                "type": "text"
+            },
+            {
+                "command": "Comida",
+                "key": "f",
+                "path": "p + f",
+                "type": "text"
+            },
+            {
+                "command": "Monedas",
+                "key": "n",
+                "path": "p + n",
+                "type": "text"
+            },
+            {
+                "command": "Basura",
+                "key": "r",
+                "path": "p + r",
+                "type": "text"
+            },
+            {
+                "command": "Madera",
+                "key": "w",
+                "path": "p + w",
+                "type": "text"
+            },
+            {
+                "command": "Barra/bloque",
+                "key": "b",
+                "path": "p + b",
+                "type": "text"
+            },
+            {
+                "command": "Cuero",
+                "key": "l",
+                "path": "p + l",
+                "type": "text"
+            },
+            {
+                "command": "Hojas",
+                "key": "S",
+                "path": "p + S",
+                "type": "text"
+            },
+            {
+                "command": "Armadura",
+                "key": "d",
+                "path": "p + d",
+                "type": "text"
+            },
+            {
+                "command": "Depósito personalizado",
+                "key": "c",
+                "path": "p + c",
+                "type": "text"
+            },
+            {
+                "command": "Configuración de depósito personalizado",
+                "key": "t",
+                "path": "p + t",
+                "type": "text"
+            },
+            {
+                "command": "Quitar designación",
+                "key": "x",
+                "path": "p + x",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Talleres",
+        "key": "b + w",
+        "data": [
+            {
+                "command": "Taller de Cuero",
+                "key": "e",
+                "path": "b + w + e",
+                "type": "text"
+            },
+            {
+                "command": "Quern",
+                "key": "q",
+                "path": "b + w + q",
+                "type": "text"
+            },
+            {
+                "command": "Piedra de molino",
+                "key": "M",
+                "path": "b + w + M",
+                "type": "text"
+            },
+            {
+                "command": "Telar",
+                "key": "o",
+                "path": "b + w + o",
+                "type": "text"
+            },
+            {
+                "command": "Tienda de Ropa",
+                "key": "k",
+                "path": "b + w + k",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Arquería",
+                "key": "b",
+                "path": "b + w + b",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Carpintería",
+                "key": "c",
+                "path": "b + w + c",
+                "type": "text"
+            },
+            {
+                "command": "Forja",
+                "key": "f",
+                "path": "b + w + f",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Joyeros",
+                "key": "j",
+                "path": "b + w + j",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Albañileria",
+                "key": "m",
+                "path": "b + w + m",
+                "type": "text"
+            },
+            {
+                "command": "Carnicería",
+                "key": "u",
+                "path": "b + w + u",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Curtidores",
+                "key": "n",
+                "path": "b + w + n",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Artesanos",
+                "key": "r",
+                "path": "b + w + r",
+                "type": "text"
+            },
+            {
+                "command": "Taller de asedio",
+                "key": "s",
+                "path": "b + w + s",
+                "type": "text"
+            },
+            {
+                "command": "Taller Mecánicos",
+                "key": "t",
+                "path": "b + w + t",
+                "type": "text"
+            },
+            {
+                "command": "Destileria",
+                "key": "l",
+                "path": "b + w + l",
+                "type": "text"
+            },
+            {
+                "command": "Taller de Agricultura",
+                "key": "w",
+                "path": "b + w + w",
+                "type": "text"
+            },
+            {
+                "command": "Cocina",
+                "key": "z",
+                "path": "b + w + z",
+                "type": "text"
+            },
+            {
+                "command": "Pescaderia",
+                "key": "h",
+                "path": "b + w + h",
+                "type": "text"
+            },
+            {
+                "command": "Cenicero",
+                "key": "y",
+                "path": "b + w + y",
+                "type": "text"
+            },
+            {
+                "command": "Tintoreria",
+                "key": "d",
+                "path": "b + w + d",
+                "type": "text"
+            },
+            {
+                "command": "Taller de jabón",
+                "key": "S",
+                "path": "b + w + S",
+                "type": "text"
+            },
+            {
+                "command": "Prensa",
+                "key": "p",
+                "path": "b + w + p",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Pared/Suelo/Escalera/Via",
+        "key": "b + C",
+        "data": [
+            {
+                "command": "Pared",
+                "type": "text",
+                "key": "w",
+                "path": "b + C + w"
+            },
+            {
+                "command": "Piso",
+                "type": "text",
+                "key": "f",
+                "path": "b + C + f"
+            },
+            {
+                "command": "Rampa",
+                "type": "text",
+                "key": "r",
+                "path": "b + C + r"
+            },
+            {
+                "command": "Escaleras arriba",
+                "type": "text",
+                "key": "u",
+                "path": "b + C + u"
+            },
+            {
+                "command": "Escaleras abajo",
+                "type": "text",
+                "key": "d",
+                "path": "b + C + d"
+            },
+            {
+                "command": "Escaleras arriba/abajo",
+                "type": "text",
+                "key": "x",
+                "path": "b + C + x"
+            },
+            {
+                "command": "Fortificación",
+                "type": "text",
+                "key": "F",
+                "path": "b + C + F"
+            },
+            {
+                "command": "Via",
+                "type": "text",
+                "key": "T",
+                "path": "b + C + T"
+            },
+            {
+                "command": "Fin de via",
+                "type": "text",
+                "key": "S",
+                "path": "b + C + S"
+            }
+        ]
+    },
+    {
+        "name": "Establecer zonas de tráfico",
+        "key": "d + o",
+        "data": [
+            {
+                "command": "Zona de mucho trafico",
+                "type": "text",
+                "key": "h",
+                "path": "d + o + h"
+            },
+            {
+                "command": "Zona de trafico normal",
+                "type": "text",
+                "key": "n",
+                "path": "d + o + n"
+            },
+            {
+                "command": "Zona de poco trafico",
+                "type": "text",
+                "key": "l",
+                "path": "d + o + l"
+            },
+            {
+                "command": "Zona de trafico restringido",
+                "type": "text",
+                "key": "r",
+                "path": "d + o + r"
+            }
+        ]
+    }
+]

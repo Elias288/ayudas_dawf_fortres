@@ -1,0 +1,112 @@
+main {
+  height: calc(100vh - var(--header-height));
+  overflow: auto;
+}
+
+main .content {
+  padding-inline: 10px;
+  min-height: 60vh;
+}
+
+article {
+  margin-top: 1rem;
+}
+
+article.text table {
+  margin-bottom: 1rem;
+}
+
+article.text table tr>* {
+  border: 1px solid #000;
+  text-align: start;
+  padding-inline: .5rem;
+}
+
+article h2 {
+  display: inline-flex;
+  gap: 5px;
+  margin: 0 0 .5rem;
+  align-items: center;
+}
+
+article .articleContent {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 15px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+article.text .articleContent {
+  max-width: 800px;
+}
+
+article .listHeader {
+  display: flex;
+  align-items: center;
+  padding: .3rem 1rem;
+}
+
+article .listHeader>* {
+  font-weight: bold;
+}
+
+article .row {
+  margin-bottom: .3rem;
+  background-color: #fff;
+  color: #000;
+}
+
+article .row label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: .3rem 1rem;
+  border-radius: 5px;
+}
+
+article .row label .comando,
+article .listHeader .comando {
+  flex: 1;
+}
+
+article input[type="radio"] {
+  display: none;
+}
+
+article input[type="radio"]:checked+.row label,
+article input[type="radio"]:checked+.row a {
+  background-color: rgb(26, 25, 51);
+  color: #fff;
+}
+
+article input[type="radio"]:checked+.row code {
+  color: #000;
+}
+
+article summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    overflow: auto;
+    height: calc(100vh - var(--header-pc-height) - var(--sideNav-heght));
+  }
+
+  main .content {
+    min-height: 70vh;
+  }
+
+  article .row label:hover,
+  article .row label:hover a {
+    background-color: rgb(26, 25, 51);
+    color: #fff;
+  }
+
+  article .row label:hover code {
+    color: #000;
+  }
+}
