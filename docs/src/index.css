@@ -42,8 +42,8 @@ a.external::after {
   height: .7rem;
   background-color: blue;
 
-  -webkit-mask: url(/network-publish-send-svgrepo-com.svg);
-  mask: url(/network-publish-send-svgrepo-com.svg);
+  -webkit-mask: url(./assets/network-publish-send-svgrepo-com.svg);
+  mask: url(./assets/network-publish-send-svgrepo-com.svg);
   mask-size: cover;
   mask-position: center;
 }
