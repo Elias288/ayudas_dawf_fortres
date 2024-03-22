@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { normalizeText, toCamelCase } from "../functions.js";
+import { useCustomContext } from "../providers/ContextProvider.jsx";
 
 /**
  * Command object
@@ -59,13 +60,21 @@ const RenderArticleCommands = ({ article }) => {
  */
 const RenderCommand = ({ comando }) => {
   const cammelCommand = toCamelCase(normalizeText(comando.command));
+  const { setShowPath } = useCustomContext();
+
+  const showCommandPath = () => {
+    setShowPath({
+      command: comando.command,
+      path: comando.path ? comando.path : comando.key,
+    });
+  };
 
   return (
     <div>
       <input type="radio" name="radio" id={"radio_" + cammelCommand} />
 
       <div className="row">
-        <label htmlFor={"radio_" + cammelCommand}>
+        <label htmlFor={"radio_" + cammelCommand} onClick={showCommandPath}>
           {comando.type === "link" ? (
             <Link to={"#" + cammelCommand} className="comando">
               {comando.command}

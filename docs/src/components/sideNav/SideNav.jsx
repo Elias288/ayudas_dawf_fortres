@@ -1,11 +1,11 @@
-import { useSideNavContext } from "../../providers/navProvider";
+import { useCustomContext } from "../../providers/ContextProvider";
 import { Link } from "react-router-dom";
 import dwarfFortressIcon from "/Dwarf_Fortress_Icon.svg";
 import DropdownButton from "../dropDown/DropdownButton";
 import "./SideNav.css";
 
 const SideNav = () => {
-  const { isVisible, closeSideNav } = useSideNavContext();
+  const { isVisible, closeSideNav } = useCustomContext();
 
   return (
     <nav className={isVisible ? "visible" : "novisible"}>

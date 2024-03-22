@@ -1,0 +1,31 @@
+.showPath {
+    background-color: #000;
+    color: #fff;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+.showPath span {
+    padding: .3rem 1rem;
+}
+
+.showPath .command {
+    color: #a0a0a0;
+}
+
+.showPath .path {
+    min-width: fit-content;
+}
+
+@media screen and (min-width: 800px) {
+    .showPath {
+
+        bottom: .3px;
+        right: 40px;
+    }
+}

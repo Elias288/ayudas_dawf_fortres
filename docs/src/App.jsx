@@ -7,6 +7,7 @@ import ComandosStonesense from "./pages/ComandosStonesense.jsx";
 import Guias from "./pages/guias/Guias.jsx";
 import ScrollToAnchor from "./components/ScrollToAnchor.jsx";
 import Comandos from "./pages/Comandos.jsx";
+import ShowPath from "./components/showPath/ShowPath.jsx";
 
 import "./App.css";
 
@@ -29,6 +30,8 @@ function App() {
             />
             <Route path="/guides" element={<Guias />} />
           </Routes>
+
+          <ShowPath command="lorem ipsum" path="chau" />
         </div>
         <Footer />
       </main>
